@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"></meta>
+	<title>CanChen.Rocks!</title>
+	<link rel="shortcut icon" href="img/engineer.svg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#window-blinds").mouseenter(function(){
+				$("#window-blinds-panel").slideToggle("slow");
+			});
+			$("#window-blinds").mouseleave(function(){
+				$("#window-blinds-panel").slideToggle("fast");
+			});
+			
+			$("#3d-printer").mouseenter(function(){
+				$("#3d-printer-panel").slideToggle("slow");
+			});
+			$("#3d-printer").mouseleave(function(){
+				$("#3d-printer-panel").slideToggle("fast");
+			});
+			
+			$("#website").mouseenter(function(){
+				$("#website-panel").slideDown("slow");
+			});
+			$("#website").mouseleave(function(){
+				$("#website-panel").slideUp("fast");
+			});
+			
+			$("#vanity-mirror").mouseenter(function(){
+				$("#vanity-mirror-panel").slideDown("slow");
+			});
+			$("#vanity-mirror").mouseleave(function(){
+				$("#vanity-mirror-panel").slideUp("fast");
+			});
+			
+			$("#andriod-app").mouseenter(function(){
+				$("#andriod-app-panel").slideDown("slow");
+			});
+			$("#andriod-app").mouseleave(function(){
+				$("#andriod-app-panel").slideUp("fast");
+			});
+			
+			$("#nail-grabber").mouseenter(function(){
+				$("#nail-grabber-panel").slideDown("slow");
+			});
+			$("#nail-grabber").mouseleave(function(){
+				$("#nail-grabber-panel").slideUp("fast");
+			});			
+		});
+	</script>
+	
+	<style type="text/css">	
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		a:hover {
+			color: #333333;
+		}
+		ul {
+			list-style-type: none; 
+			overflow: hidden; 
+		}
+		li {
+			float: left;
+		}
+		li a {
+			display: block;
+		}
+		
+		.NavBar li a:hover {
+			background-color: #111111;
+			color: #FFFFFF;
+		}
+		.WorkSamplesWraper {
+			display: inline-block;
+			vertical-align: top;
+			width: 80%;
+			max-width:226px;
+			margin: 10px;
+			overflow: hidden;
+		}
+		.WorkSamplesWraper img {
+			height: 100%;
+			max-height: 200px; 
+			width: 100%;
+			max-width: 200px;
+			margin: 13px 13px 13px 13px;
+		}
+		.WorkSamplesWraper img:hover {
+			height: 100%;
+			max-height: 226px; 
+			width: 100%;
+			transition-duration: 0.2s;
+			max-width: 226px;
+			margin: 0px;
+		}
+		.WorkSamplesPanel {
+			padding: 0px 30px;
+			color: #333333;
+			display: none;
+		}
+		
+		.alert-none {
+			display: none;
+		}
+		.alert-error {
+			color: red;
+		}
+		.alert-success {
+			color: green;
+		}
+		
+		input[type=text], textarea {
+			display: block;
+			width: 95%;
+			border: none;
+			border-top: 1px solid #F1F1F1;
+			font-size: 20px;
+			padding: 10px;
+			margin: auto;
+		}
+		input[type=text]:focus, textarea:focus {
+			border: 2px solid #777777;
+		}
+		input[type=submit] {
+			-webkit-appearance: none; /* safari */
+			background-color: #00AAA0;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px 4px 2px;
+			cursor: pointer;
+			border-radius: 2px;
+			width: 93%;
+		}
+		input[type=submit]:hover {
+			background-color: #009990;
+		}
+		
+		.footer img{
+			height: 30px;
+			width: 30px;
+			margin: 0px 10px 20px 10px;
+		}
+	</style>
+</head>
+<body style="margin:0px; font-family: Arial; font-variant: small-caps; text-align: center;">
+	<div class="NavBar" style="position:fixed; overflow:hidden; z-index:9; margin-top:0px; height:170px; width:100%; background-color:#333333;">
+		<div style="position:relative; overflow:hidden; display:relative; height:100%; width:85%; margin:auto;">
+			<div style="float:left; height:100%; display:table;">
+				<a href="#Home" style="display:table-cell; vertical-align:middle; text-decoration: none;"><h1 style="color:#FFFFFF;">Learn About Him!</h1></a>
+			</div>
+			<div style="float:right; height:100%; display:table; ">
+				<div style="display:table-cell; vertical-align:middle;">
+					<ul style="float: left; list-style-type: none; overflow: hidden; font-size: 20px; margin:0px auto;">
+						<li><a href="#WorkSamples" style="padding: 16px;">Work Samples</a></li>
+						<li><a href="#About" style="padding: 16px;">Bio</a></li>
+						<li><a href="#Contact" style="padding: 16px;">Contact</a></li>
+						<li><a href="file/Resume.pdf" style="padding: 16px;">Cv</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="Home" style="height:170px; background-color:#00AAA0; position:relative;"></div>
+	<div style="background-color:#00AAA0; position:relative; overflow:hidden;">
+		<div style="height:100px;"></div>
+		<img src="img/engineer.svg" alt="" style="margin:auto; width:80%; max-height:400px; max-width:400px; ">
+		<div style="height:25px;"></div>
+		<div>
+			<h1 style="display:inline-block; color:#FFFFFF; height:40px; vertical-align:middle; margin-right:10px;">Hello World!</h1>
+			<h1 style="display:inline-block; color:#FFFFFF; height:40px; font-size:26px; vertical-align:middle;"> 世界，你好!</h1>
+		</div>
+		<div>
+			<img src="img/three-lines.svg" alt="" style="transform:scaleX(-1); filter:FlipH; margin:auto; height:50px; width:50px;">
+			<img src="img/star-round.svg" alt="" style="margin:auto; height:50px; width:50px;">
+			<img src="img/three-lines.svg" alt="" style="margin:auto; height:50px; width:50px;">
+		</div>
+		<div style="height:25px;"></div>
+		<h2 style="color:white; margin:0px;">Check Out My</h2>
+		<div style="height:25px;"></div>
+			<div style="display:table; width:90%; max-width: 450px; margin:auto; color:#FFFFFF;">
+				<a href="#WorkSamples"><p style="display:table-cell;">Work Samples</p></a>
+				<p style="padding:0px 10px; display:table-cell;">-</p>
+				<a href="https://github.com/CCinCapital"><p style="display:table-cell;">GitHub Repository</p></a>
+				<p style="padding:0px 10px; display:table-cell;">-</p>
+				<a href="https://www.linkedin.com/in/can-chen"><p style="display:table-cell;">LinkedIn Profile</p></a>
+			</div>
+		<div id="WorkSamples" style="height:100px;"></div>
+	</div>
+
+	<div style="background-color:#FFFFFF; margin:0px; position:relative; overflow:hidden;">
+		<div style="height:100px;"></div>
+		<h1 style="color:#333333;">Work Samples</h1>
+		<div>
+			<img src="img/three-lines-333333.svg" alt="" style="transform:scaleX(-1); filter:FlipH; margin:auto; height:50px; width:50px;">
+			<img src="img/star-round-333333.svg" alt="" style="margin:auto; height:50px; width:50px;">
+			<img src="img/three-lines-333333.svg" alt="" style="margin:auto; height:50px; width:50px;">
+		</div>
+		<div style="height:50px;"></div>
+		<div style="width:80%; margin:auto;">
+			<div class="WorkSamplesWraper">
+				<div id="window-blinds"><a href=""><img src="img/window-blinds.svg" alt=""></img></a></div>
+				<div class="WorkSamplesPanel" id="window-blinds-panel">
+					<h3>Smart<br>Blinds Roller</h3>
+				</div>
+			</div>
+			<div class="WorkSamplesWraper">
+				<div id="3d-printer"><a href=""><img src="img/3d-printer.svg" alt=""></img></a></div>
+				<div class="WorkSamplesPanel" id="3d-printer-panel"><h3>Powder-Based<br>3D Printer</h3></div>
+			</div>
+			<div class="WorkSamplesWraper">
+				<div id="website"><a href=""><img src="img/browser.svg" alt=""></img></a></div>
+				<div class="WorkSamplesPanel" id="website-panel"><h3>This Website</h3></div>
+			</div>
+			<div class="WorkSamplesWraper">
+				<div id="vanity-mirror"><a href=""><img src="img/mirror.svg" alt=""></img></a></div>
+				<div class="WorkSamplesPanel" id="vanity-mirror-panel"><h3>Hollywood-Like<br>Vanity Mirror</h3></div>
+			</div>
+			<div class="WorkSamplesWraper">
+				<div id="andriod-app"><a href=""><img src="img/smartphone.svg" alt=""></img></a></div>
+				<div class="WorkSamplesPanel" id="andriod-app-panel"><h3>Andriod App<br>for<br>Smart-Parking-Services</h3></div>
+			</div>
+			<div class="WorkSamplesWraper">
+				<div id="nail-grabber"><a href=""><img src="img/nail.svg" alt=""></img></a></div>
+				<div class="WorkSamplesPanel" id="nail-grabber-panel"><h3>Nail Grabber</h3></div>
+			</div>
+		</div>
+		<div id="About" style="height:100px;"></div>
+	</div>
+
+	<div style="background-color:#00AAA0; margin:0px; position:relative; overflow:hidden;">
+		<div style="height:100px;"></div>
+		<h1 style="color:#FFFFFF;">About</h1>
+		<div>
+			<img src="img/three-lines.svg" alt="" style="transform:scaleX(-1); filter:FlipH; margin:auto; height:50px; width:50px;">
+			<img src="img/star-round.svg" alt="" style="margin:auto; height:50px; width:50px;">
+			<img src="img/three-lines.svg" alt="" style="margin:auto; height:50px; width:50px;">
+		</div>
+		<div style="height:40px;"></div>
+		<p style="display:inline-block; color:#FFFFFF; width:60%; min-width:200px; max-width:388px; margin:0px 30px 20px 30px; vertical-align:top; text-align:justify;">
+			Can Chen is an engineer in training (EIT), whom is pursuing a career as a licensed engineering professional. He recently graduated (Feb. 2017) from Carleton University with a Bachlor's degree in Electrical Engineering. 
+		</p>
+		<p style="display:inline-block; color:#FFFFFF; width:60%; min-width:200px; max-width:388px; margin:0px 30px 20px 30px; vertical-align:top; text-align:justify;">
+			Can admires creative ideas, and supports those who would make it off the production line. He is a frequent backer on 
+			<a href="https://www.kickstarter.com/profile/285011559"><u>Kickstarter</u></a>. Can shares his creative projects here, he loves it, and hoping that you would love it as well.
+		</p>
+		<div id="Contact" style="height:100px;"></div>
+	</div>
+
+	<div style="background-color:#FFFFFF; margin:0px; position:relative; overflow:hidden;">
+		<div style="height:100px;"></div>
+		<h1 style="color:#333333;">Contact Me</h1>
+		<div>
+			<img src="img/three-lines-333333.svg" alt="" style="transform:scaleX(-1); filter:FlipH; margin:auto; height:50px; width:50px;">
+			<img src="img/star-round-333333.svg" alt="" style="margin:auto; height:50px; width:50px;">
+			<img src="img/three-lines-333333.svg" alt="" style="margin:auto; height:50px; width:50px;">
+		</div>
+		<div style="height:50px;"></div>
+		<div class="alert-none" id="msg"></div>
+		<form id="myForm" style="width:80%; max-width:500px; margin:auto; overflow:hidden;">
+			<input type="text" placeholder="Name" id="name" name="name">
+			<input type="text" placeholder="E-mail" id="email" name="email">
+			<input type="text" placeholder="Website (optional)" id="website" name="website">
+			<textarea type="text" placeholder="Message" rows="6" id="message" name="message" style="resize:none; border-bottom:1px solid #F1F1F1; font-family:Arial;"></textarea>
+			<input type="submit" value="Send Message">
+		</form>
+		<div style="height:100px;"></div>
+	</div>
+	
+	<div class="footer" style="background-color:#232F3E; min-height:200px; color:#FFFFFF;">
+		<div style="height:20px;"></div>
+		<div style="display:inline-block; width:80%; max-width:270px; vertical-align:top; margin-left:10%; margin-right:10%;">
+			<h1>
+				On The Web
+			</h1>
+			<a title="LinkedIn Profile" href="https://www.linkedin.com/in/can-chen"><img src="img/icon_white_linkedin.png" alt="LinkedIn"></img></a>
+			<a title="Github Repository" href="https://github.com/CCinCapital"><img src="img/icon_white_github.png" alt="Github"></img></a>
+			<a title="Thingiverse" href="http://www.thingiverse.com/CCinCapital/designs"><img src="img/icon_white_thingiverse.png" alt="Thingiverse"></img></a>
+			<a title="Instructables" href="http://www.instructables.com/member/CCinCapital/?publicView=true"><img src="img/icon_white_instructables.png" alt="Instructables"></img></a>
+			<a title="Find me on WeChat" href="img/QR_wechat.jpeg"><img src="img/icon_white_wechat.png" alt="WeChat"></img></a>
+		</div>
+		<div style="display:inline-block; width:80%; max-width:270px; vertical-align:top; margin-left:10%; margin-right:10%;">
+			<h1>
+				The Licenses
+			</h1>
+			<img src="img/cc.svg" alt=""></img>
+			<img src="img/by.svg" alt=""></img>
+			<img src="img/nc.svg" alt=""></img>
+			<img src="img/sa.svg" alt=""></img>
+		</div>
+		<p style="font-size: 10px;"><a href="imprint.html">imprint&ensp;&ensp;&ensp;</a>&#9400 2017 CanChen.Rocks</p>
+		<div style="height:20px;"></div>
+	</div>
+	
+	<script>	
+		function formSubmit(e){
+			e.preventDefault();
+			
+			var name = document.getElementById('name').value;
+			var email = document.getElementById('email').value;
+			var website = document.getElementById('website').value;
+			var message = document.getElementById('message').value;
+			var msg = document.getElementById('msg');
+
+			if(name == '' || email == '' || message == ''){
+				msg.className="alert-error";
+				msg.innerHTML = 'Please fill out all necessary fields';
+			} else {
+				msg.className="alert-success";
+				msg.innerHTML = 'Your message has successfully sent to Can.';
+			}		
+		}
+		document.getElementById('myForm').addEventListener('submit', formSubmit, false);
+	</script>
+</body>
+</html>
