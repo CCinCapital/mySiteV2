@@ -263,7 +263,7 @@
 		</div>
 		<div style="height:50px;"></div>
 		<div class="alert-none" id="msg"></div>
-		<form id="myForm" style="width:80%; max-width:500px; margin:auto; overflow:hidden;">
+		<form id="myForm" method="POST" action="mailto:canchen@me.com" enctype="text/plain" style="width:80%; max-width:500px; margin:auto; overflow:hidden;">
 			<input type="text" placeholder="Name" id="name" name="name">
 			<input type="text" placeholder="E-mail" id="email" name="email">
 			<input type="text" placeholder="Website (optional)" id="website" name="website">
@@ -312,6 +312,18 @@
 				msg.className="alert-error";
 				msg.innerHTML = 'Please fill out all necessary fields';
 			} else {
+				
+				var target = e.target || e.srcElement;
+				var i = 0;
+				var mem = '';
+				for(i = 0; i < target.length; ++i) {
+					if(target[i].type != 'text' && target[i].type != 'textarea') {
+					continue;
+				}
+					mem += target[i].name + ': ' + target[i].value + "\r\n";
+				}
+				this.submit();
+				
 				msg.className="alert-success";
 				msg.innerHTML = 'Your message has successfully sent to Can.';
 			}		
