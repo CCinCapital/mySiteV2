@@ -21,10 +21,10 @@
 				$("#3d-printer-panel").slideToggle("fast");
 			});
 			
-			$("#website").mouseenter(function(){
+			$("#this-website").mouseenter(function(){
 				$("#website-panel").slideDown("slow");
 			});
-			$("#website").mouseleave(function(){
+			$("#this-website").mouseleave(function(){
 				$("#website-panel").slideUp("fast");
 			});
 			
@@ -215,7 +215,7 @@
 				<div class="WorkSamplesPanel" id="3d-printer-panel"><h3>Powder-Based<br>3D Printer</h3></div>
 			</div>
 			<div class="WorkSamplesWraper">
-				<div id="website"><a href="This_Website.html"><img src="img/browser.svg" alt=""></img></a></div>
+				<div id="this-website"><a href="This_Website.html"><img src="img/browser.svg" alt=""></img></a></div>
 				<div class="WorkSamplesPanel" id="website-panel"><h3>This Website</h3></div>
 			</div>
 			<div class="WorkSamplesWraper">
@@ -323,6 +323,7 @@
 					data:dataString,
 					cache:false,
 					success: function(data){
+						console.log(dataString);
 						$('#echoBack').html(data);
 						msg.className="alert-success";
 						msg.innerHTML = 'Your message has successfully sent to Can.';
