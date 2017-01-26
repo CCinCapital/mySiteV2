@@ -263,13 +263,14 @@
 		</div>
 		<div style="height:50px;"></div>
 		<div class="alert-none" id="msg"></div>
-		<form id="myForm" method="POST" action="mailto:canchen@me.com" enctype="text/plain" style="width:80%; max-width:500px; margin:auto; overflow:hidden;">
+		<form id="myForm" style="width:80%; max-width:500px; margin:auto; overflow:hidden;">
 			<input type="text" placeholder="Name" id="name" name="name">
 			<input type="text" placeholder="E-mail" id="email" name="email">
 			<input type="text" placeholder="Website (optional)" id="website" name="website">
 			<textarea type="text" placeholder="Message" rows="6" id="message" name="message" style="resize:none; border-bottom:1px solid #F1F1F1; font-family:Arial;"></textarea>
 			<input type="submit" value="Send Message">
 		</form>
+		<p id="echoBack"></p>
 		<div style="height:100px;"></div>
 	</div>
 	
@@ -313,20 +314,22 @@
 				msg.innerHTML = 'Please fill out all necessary fields';
 			} else {
 				
-				var target = e.target || e.srcElement;
-				var i = 0;
-				var mem = '';
-				for(i = 0; i < target.length; ++i) {
-					if(target[i].type != 'text' && target[i].type != 'textarea') {
-					continue;
-				}
-					mem += target[i].name + ': ' + target[i].value + "\r\n";
-				}
-				this.submit();
+				var dataString = 'name='+ name + '&email=' + email + '&website=' + website + '&message=' + message;
 				
-				msg.className="alert-success";
-				msg.innerHTML = 'Your message has successfully sent to Can.';
-			}		
+				$.ajax({
+					type:"POST",
+					url:"contact_process.php",
+					dataType:"text",
+					data:dataString,
+					cache:false,
+					success: function(data){
+						$('#echoBack').html(data);
+						msg.className="alert-success";
+						msg.innerHTML = 'Your message has successfully sent to Can.';
+					}
+				});
+			}
+			return false;			
 		}
 		document.getElementById('myForm').addEventListener('submit', formSubmit, false);
 	</script>
