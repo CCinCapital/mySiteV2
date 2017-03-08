@@ -4,8 +4,9 @@
 	<meta charset="UTF-8"></meta>
 	<title>CanChen.Rocks!</title>
 	<link rel="shortcut icon" href="img/engineer.svg">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="stylesNavBar.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/stylesNavBar.css">
+	<link rel="stylesheet" href="css/stylesWelcomeDiv.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
@@ -29,33 +30,41 @@
 		</div>
 	</div>
 
-	<div id="Home" style="height:170px; background-color:#00AAA0; position:relative;"></div>
-	<div style="background-color:#00AAA0; position:relative; overflow:hidden;">
-		<div style="height:60px;"></div>
-		<img src="img/engineer.svg" alt="" style="margin:auto; width:80%; max-height:400px; max-width:400px; ">
-		<div style="height:25px;"></div>
-		<div>
-			<h1 style="display:inline-block; color:#FFFFFF; height:40px; vertical-align:middle; margin-right:10px;">Hello World!</h1>
-			<h1 style="display:inline-block; color:#FFFFFF; height:40px; font-size:26px; vertical-align:middle;"> 世界，你好!</h1>
+	<div id="Home" class="Spacer-Div-H170p-00AAA0"></div>
+	<div class="WelcomeDiv">
+		<div class="WelcomeDiv-PortraitWraper">
+			<div class="Spacer-Div-H60p"></div>
+			<img src="img/engineer.svg" alt="">
+			<div class="Spacer-Div-H15p"></div>
 		</div>
 		<div>
-			<img src="img/three-lines.svg" alt="" style="transform:scaleX(-1); filter:FlipH; margin:auto; height:50px; width:50px;">
-			<img src="img/star-round.svg" alt="" style="margin:auto; height:50px; width:50px;">
-			<img src="img/three-lines.svg" alt="" style="margin:auto; height:50px; width:50px;">
+			<h1 class="H1-English">Hello World!</h1>
+			<h1 class="H1-Chinese">世界，你好!</h1>
 		</div>
-		<div style="height:25px;"></div>
-		<h2 style="color:white; margin:0px;">Check Out My</h2>
-		<div style="height:25px;"></div>
-			<div style="display:table; width:90%; max-width: 500px; margin:auto; color:#FFFFFF;">
-				<a href="#Projects"><p style="display:table-cell;">Recent Projects</p></a>
-				<p style="padding:0px 10px; display:table-cell;">-</p>
-				<a href="https://github.com/CCinCapital"><p style="display:table-cell;">GitHub Repository</p></a>
-				<p style="padding:0px 10px; display:table-cell;">-</p>
-				<a href="https://www.linkedin.com/in/can-chen"><p style="display:table-cell;">LinkedIn Profile</p></a>
-			</div>
-		<div id="Projects" style="height:100px;"></div>
+		<div class="Spacer-Icon">
+			<img class="Spacer-Icon-LeftWing" src="img/three-lines.svg" alt="">
+			<img src="img/star-round.svg" alt="">
+			<img src="img/three-lines.svg" alt="">
+		</div>
+		<div class="Spacer-Div-H25p"></div>
+		<h2>Check Out My</h2>
+		<div class="Spacer-Div-H25p"></div>
+		<div class="WelcomeDiv-QuicklinkWraper">
+			<a href="#Projects">
+				<p>Recent Projects</p>
+			</a>
+			<p>-</p>
+			<a href="https://github.com/CCinCapital">
+				<p>GitHub Repository</p>
+			</a>
+			<p>-</p>
+			<a href="https://www.linkedin.com/in/can-chen">
+				<p>LinkedIn Profile</p>
+			</a>
+		</div>
 	</div>
-
+	
+	<div id="Projects" class="Spacer-Div-H100p-00AAA0"></div>
 	<div style="background-color:#FFFFFF; margin:0px; position:relative; overflow:hidden;">
 		<div style="height:100px;"></div>
 		<h1 style="color:#333333;">Projects</h1>
