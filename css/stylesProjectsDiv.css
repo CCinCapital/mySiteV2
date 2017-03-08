@@ -1,0 +1,46 @@
+
+.ProjectsDiv {
+	background-color:#FFFFFF; 
+	margin:0px; 
+	position:relative; 
+	overflow:hidden;
+}
+
+.ProjectsDiv h1 {
+	color:#333333;
+}
+
+.ProjectsDiv-ProjectsWraper {
+	width:80%; 
+	margin:auto;
+}
+
+.ProjectsDiv-ProjectsWraper-Project {
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+	max-width:226px;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.ProjectsDiv-ProjectsWraper-Project img {
+	height: 100%;
+	max-height: 200px; 
+	width: 100%;
+	max-width: 200px;
+	margin: 13px 13px 13px 13px;
+}
+.ProjectsDiv-ProjectsWraper-Project img:hover {
+	height: 100%;
+	max-height: 226px; 
+	width: 100%;
+	transition-duration: 0.2s;
+	max-width: 226px;
+	margin: 0px;
+}
+
+.ProjectsDiv-ProjectsWraper-Project-Name {
+	padding: 0px 20px;
+	color: #333333;
+}

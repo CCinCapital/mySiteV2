@@ -5,18 +5,26 @@ body {
 	 text-align: center;
 }
 
+
+.Spacer-Div-H15p {
+	height:15px;
+}
+
 .Spacer-Div-H25p {
 	height:25px;
 }
 
-.Spacer-Div-H15p {
-	height:15px;
+.Spacer-Div-H50p {
+	height:50px;
 }
 
 .Spacer-Div-H60p {
 	height:60px;
 }
 
+.Spacer-Div-H100p {
+	height:100px; 
+}
 .Spacer-Div-H100p-00AAA0 {
 	height:100px; 
 	background-color:#00AAA0; 
@@ -54,36 +62,6 @@ li {
 }
 li a {
 	display: block;
-}
-
-
-.WorkSamplesWraper {
-	display: inline-block;
-	vertical-align: top;
-	width: 80%;
-	max-width:226px;
-	margin: 10px;
-	overflow: hidden;
-}
-.WorkSamplesWraper img {
-	height: 100%;
-	max-height: 200px; 
-	width: 100%;
-	max-width: 200px;
-	margin: 13px 13px 13px 13px;
-}
-.WorkSamplesWraper img:hover {
-	height: 100%;
-	max-height: 226px; 
-	width: 100%;
-	transition-duration: 0.2s;
-	max-width: 226px;
-	margin: 0px;
-}
-.WorkSamplesPanel {
-	padding: 0px 30px;
-	color: #333333;
-	display: none;
 }
 
 .alert-none {
