@@ -1,3 +1,6 @@
+/***************/
+/****Overall****/
+/***************/
 body {
 	 margin:0px;
 	 font-family: Arial;
@@ -5,6 +8,23 @@ body {
 	 text-align: center;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: #333333;
+}
+ul {
+	list-style-type: none; 
+	overflow: hidden; 
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+}
 
 .Spacer-Div-H15p {
 	height:15px;
@@ -46,23 +66,219 @@ body {
 	filter:FlipH; 
 }
 
-a {
+/**************/
+/****NavBar****/
+/**************/
+.NavBar {
+	 position:fixed; 
+	 overflow:hidden; 
+	 z-index:9; 
+	 margin-top:0px; 
+	 height:170px; 
+	 width:100%; 
+	 background-color:#333333;
+}
+
+.NavBar-ContentWraper {
+	position:relative;
+	overflow:hidden;
+	display:relative;
+	height:100%;
+	width:85%;
+	margin:auto;
+}
+
+/****slogan****/
+.NavBar-ContentWraper-SloganWraper {
+	float:left; 
+	height:100%; 
+	display:table;
+}
+
+.NavBar-ContentWraper-SloganWraper a{
+	display:table-cell; 
+	vertical-align:middle; 
 	text-decoration: none;
-	color: white;
 }
-a:hover {
-	color: #333333;
+
+.NavBar-ContentWraper-SloganWraper h1 {
+	color:#FFFFFF;
 }
-ul {
+
+/****quick link****/
+.NavBar-ContentWraper-QuicklinkWraper {
+	float:right; 
+	height:100%; 
+	display:table;
+}
+
+.NavBar-ContentWraper-QuicklinkWraper div {
+	display:table-cell; 
+	vertical-align:middle;
+}
+
+.NavBar-ContentWraper-QuicklinkWraper ul {
+	float: left; 
 	list-style-type: none; 
 	overflow: hidden; 
+	font-size: 20px; 
+	margin:0px auto;
 }
-li {
+
+.NavBar-ContentWraper-QuicklinkWraper ul li {
 	float: left;
 }
-li a {
+
+.NavBar-ContentWraper-QuicklinkWraper ul li a {
 	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 16px;
 }
+
+.NavBar-ContentWraper-QuicklinkWraper ul li a:hover {
+	background-color: #111111;
+	color: #FFFFFF;
+}
+
+
+/******************/
+/****WelcomeDiv****/
+/******************/
+.WelcomeDiv {
+	background-color:#00AAA0;
+	color:#FFFFFF;
+	position:relative;
+	overflow:hidden;
+}
+
+.WelcomeDiv-PortraitWraper img{
+	margin:auto; 
+	width:80%; 
+	max-height:400px; 
+	max-width:400px; 
+}
+
+.WelcomeDiv h1{
+	display:inline-block; 
+	color:#FFFFFF; 
+	height:40px; 
+	vertical-align:middle; 
+	padding: 10px;
+}
+
+.WelcomeDiv h2{
+	margin: 0px;
+}
+ 
+.WelcomeDiv p {
+	display:table-cell;
+	padding:5px 5px;
+}
+ 
+.H1-English{
+	font-size: 2em; 
+}
+
+.H1-Chinese{
+	font-size: 1.6em; 
+}
+
+.WelcomeDiv-QuicklinkWraper {
+	display:table; 
+	width:90%; 
+	max-width: 500px; 
+	margin:auto;
+}
+
+
+/*******************/
+/****ProjectsDiv****/
+/*******************/
+.ProjectsDiv {
+	background-color:#FFFFFF; 
+	margin:0px; 
+	position:relative; 
+	overflow:hidden;
+}
+
+.ProjectsDiv h1 {
+	color:#333333;
+}
+
+.ProjectsDiv-ProjectsWraper {
+	width:80%; 
+	margin:auto;
+}
+
+.ProjectsDiv-ProjectsWraper-Project {
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+	max-width:226px;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.ProjectsDiv-ProjectsWraper-Project img {
+	height: 100%;
+	max-height: 200px; 
+	width: 100%;
+	max-width: 200px;
+	margin: 13px 13px 13px 13px;
+}
+.ProjectsDiv-ProjectsWraper-Project img:hover {
+	height: 100%;
+	max-height: 226px; 
+	width: 100%;
+	transition-duration: 0.2s;
+	max-width: 226px;
+	margin: 0px;
+}
+
+.ProjectsDiv-ProjectsWraper-Project-Name {
+	padding: 0px 20px;
+	color: #333333;
+}
+
+
+/**************/
+/****BioDiv****/
+/**************/
+.BioDiv {
+	background-color:#00AAA0;
+	margin:0px;
+	position:relative;
+	overflow:hidden;"
+}
+
+.BioDiv h1 {
+	color:#333333;
+}
+
+.BioDiv p {
+	display:inline-block;
+	color:#FFFFFF; 
+	width:60%;
+	min-width:200px;
+	max-width:388px;
+	margin:0px 30px 20px 30px; 
+	vertical-align:top; 
+	text-align:justify;
+}
+
+
+/*******************/
+/****ContactsDiv****/
+/*******************/
+.ContactsDiv {
+	background-color:#FFFFFF;
+	margin:0px; 
+	position:relative;
+	overflow:hidden;"
+}
+
+.ContactsDiv h1 {}
 
 .alert-none {
 	display: none;
@@ -72,6 +288,13 @@ li a {
 }
 .alert-success {
 	color: green;
+}
+
+.ContactsDiv form {
+	width:80%;
+	max-width:500px;
+	margin:auto; 
+	overflow:hidden;
 }
 
 input[type=text], textarea {
@@ -102,8 +325,35 @@ input[type=submit]:hover {
 	background-color: #009990;
 }
 
-.footer img{
+
+/**************/
+/****Footer****/
+/**************/
+.Footer {
+	background-color:#232F3E;
+	min-height:200px;
+	color:#FFFFFF;
+}
+
+.Footer-ContentWraper {
+	display:inline-block; 
+	width:80%;
+	max-width:270px;
+	vertical-align:top;
+	margin-left:10%;
+	margin-right:10%;
+}
+
+.Footer img{
 	height: 30px;
 	width: 30px;
 	margin: 0px 10px 20px 10px;
+}
+
+.Footer h1 {
+	color: #FFFFFF;
+}
+
+.Footer p {
+	font-size: 10px;
 }

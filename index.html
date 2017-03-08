@@ -5,9 +5,6 @@
 	<title>CanChen.Rocks!</title>
 	<link rel="shortcut icon" href="img/engineer.svg">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/stylesNavBar.css">
-	<link rel="stylesheet" href="css/stylesWelcomeDiv.css">
-	<link rel="stylesheet" href="css/stylesProjectsDiv.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
@@ -140,36 +137,36 @@
 	</div>
 
 	<div id="About" class="Spacer-Div-H100p"></div>
-	<div style="background-color:#00AAA0; margin:0px; position:relative; overflow:hidden;">
+	<div class="BioDiv">
 		<div style="height:100px;"></div>
 		<h1 style="color:#FFFFFF;">About</h1>
-		<div>
-			<img src="img/three-lines.svg" alt="" style="transform:scaleX(-1); filter:FlipH; margin:auto; height:50px; width:50px;">
-			<img src="img/star-round.svg" alt="" style="margin:auto; height:50px; width:50px;">
-			<img src="img/three-lines.svg" alt="" style="margin:auto; height:50px; width:50px;">
+		<div class="Spacer-Icon">
+			<img class="Spacer-Icon-LeftWing" src="img/three-lines.svg" alt="">
+			<img src="img/star-round.svg" alt="">
+			<img src="img/three-lines.svg" alt="">
 		</div>
-		<div style="height:40px;"></div>
-		<p style="display:inline-block; color:#FFFFFF; width:60%; min-width:200px; max-width:388px; margin:0px 30px 20px 30px; vertical-align:top; text-align:justify;">
+		<div class="Spacer-Div-H50p"></div>
+		<p>
 			Can Chen is an engineer in training (EIT), whom is pursuing a career as a licensed engineering professional. He recently graduated (Feb. 2017) from Carleton University with a Bachlor's degree in Electrical Engineering. 
 		</p>
-		<p style="display:inline-block; color:#FFFFFF; width:60%; min-width:200px; max-width:388px; margin:0px 30px 20px 30px; vertical-align:top; text-align:justify;">
+		<p>
 			Can admires creative ideas, and supports those who would make it off the production line. He is a frequent backer on 
 			<a href="https://www.kickstarter.com/profile/285011559"><u>Kickstarter</u></a>. Can shares his creative projects here, he loves it, and hoping that you would love it as well.
 		</p>
-		<div id="Contact" style="height:100px;"></div>
 	</div>
 
-	<div style="background-color:#FFFFFF; margin:0px; position:relative; overflow:hidden;">
-		<div style="height:100px;"></div>
-		<h1 style="color:#333333;">Contact Me</h1>
-		<div>
-			<img src="img/three-lines-333333.svg" alt="" style="transform:scaleX(-1); filter:FlipH; margin:auto; height:50px; width:50px;">
-			<img src="img/star-round-333333.svg" alt="" style="margin:auto; height:50px; width:50px;">
-			<img src="img/three-lines-333333.svg" alt="" style="margin:auto; height:50px; width:50px;">
+	<div id="Contact" class="Spacer-Div-H100p-00AAA0"></div>
+	<div class="ContactsDiv">
+		<div class="Spacer-Div-H100p"></div>
+		<h1>Contact Me</h1>
+		<div class="Spacer-Icon">
+			<img class="Spacer-Icon-LeftWing" src="img/three-lines-333333.svg" alt="">
+			<img src="img/star-round-333333.svg" alt="">
+			<img src="img/three-lines-333333.svg" alt="">
 		</div>
-		<div style="height:50px;"></div>
+		<div class="Spacer-Div-H50p"></div>
 		<div class="alert-none" id="msg"></div>
-		<form id="myForm" style="width:80%; max-width:500px; margin:auto; overflow:hidden;">
+		<form id="myForm">
 			<input type="text" placeholder="Name" id="name" name="name">
 			<input type="text" placeholder="E-mail" id="email" name="email">
 			<input type="text" placeholder="Website (optional)" id="website" name="website">
@@ -177,12 +174,12 @@
 			<input type="submit" value="Send Message">
 		</form>
 		<p id="echoBack"></p>
-		<div style="height:100px;"></div>
+		<div class="Spacer-Div-H100p"></div>
 	</div>
 	
-	<div class="footer" style="background-color:#232F3E; min-height:200px; color:#FFFFFF;">
-		<div style="height:20px;"></div>
-		<div style="display:inline-block; width:80%; max-width:270px; vertical-align:top; margin-left:10%; margin-right:10%;">
+	<div class="Footer">
+		<div class="Spacer-Div-H25p"></div>
+		<div class="Footer-ContentWraper">
 			<h1>
 				On The Web
 			</h1>
@@ -192,7 +189,7 @@
 			<a title="Instructables" href="http://www.instructables.com/member/CCinCapital/?publicView=true"><img src="img/icon_white_instructables.png" alt="Instructables"></img></a>
 			<a title="Find me on WeChat" href="img/QR_wechat.jpeg"><img src="img/icon_white_wechat.png" alt="WeChat"></img></a>
 		</div>
-		<div style="display:inline-block; width:80%; max-width:270px; vertical-align:top; margin-left:10%; margin-right:10%;">
+		<div class="Footer-ContentWraper">
 			<h1>
 				The Licenses
 			</h1>
@@ -201,8 +198,8 @@
 			<img src="img/nc.svg" alt=""></img>
 			<img src="img/sa.svg" alt=""></img>
 		</div>
-		<p style="font-size: 10px;"><a href="imprint.html">imprint&ensp;&ensp;&ensp;</a>&#9400 2017 CanChen.Rocks</p>
-		<div style="height:20px;"></div>
+		<p><a href="imprint.html">imprint&ensp;&ensp;&ensp;</a>&#9400 2017 CanChen.Rocks</p>
+		<div class="Spacer-Div-H15p"></div>
 	</div>
 	
 	<script>	
