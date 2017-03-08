@@ -50,6 +50,10 @@ li a {
 	background-color:#00AAA0; 
 }
 
+.Spacer-Div-H170p {
+	height:170px; 
+}
+
 .Spacer-Div-H170p-00AAA0 {
 	height:170px; 
 	background-color:#00AAA0; 
@@ -356,4 +360,15 @@ input[type=submit]:hover {
 
 .Footer p {
 	font-size: 10px;
+}
+
+
+/**************/
+/*****404******/
+/**************/
+.404 {
+	margin:0px; 
+	position:relative;
+	overflow:hidden;
+	color: #000000;
 }

@@ -3,81 +3,59 @@
 	<meta charset="UTF-8"></meta>
 	<title>404 Not Found</title>
 	<link rel="shortcut icon" href="http://www.canchen.rocks/img/engineer.svg">
-	<style>
-	a {
-		text-decoration: none;
-		color: white;
-	}
-	a:hover {
-		color: #333333;
-	}
-	ul {
-		list-style-type: none; 
-		overflow: hidden; 
-	}
-	li {
-		float: left;
-	}
-	li a {
-		display: block;
-	}
-	
-	.NavBar li a:hover {
-		background-color: #111111;
-		color: #FFFFFF;
-	}
-	.footer img{
-		height: 30px;
-		width: 30px;
-		margin: 0px 10px 20px 10px;
-	}
-	</style>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="margin:0px; font-family: Arial; font-variant: small-caps; text-align: center; background-color:#00AAA0;">
-	<div class="NavBar" style="position:fixed; overflow:hidden; z-index:9; margin-top:0px; height:170px; width:100%; background-color:#333333;">
-		<div style="position:relative; overflow:hidden; display:relative; height:100%; width:85%; margin:auto;">
-			<div style="float:left; height:100%; display:table;">
-				<a href="" style="display:table-cell; vertical-align:middle; text-decoration: none;"><h1 style="color:#FFFFFF;">Opps! There's an error.</h1></a>
+<body>
+	<div class="NavBar">
+		<div class="NavBar-ContentWraper">
+			<div class="NavBar-ContentWraper-SloganWraper">
+				<a href="#Home" >
+					<h1>Oops, There's an error!</h1>
+				</a>
 			</div>
 		</div>
 	</div>
 	
-	<div style="height:170px;"></div>
-	<div style=" margin:0px; position:relative; overflow:hidden;">
-		<div style="height:170px;"></div>
-		<h1 style="color:#FFFFFF;">404 Page Not Found.</h1>
-		<div>
-			<img src="http://www.canchen.rocks/img/three-lines.svg" alt="" style="transform:scaleX(-1); filter:FlipH; margin:auto; height:50px; width:50px;">
-			<img src="http://www.canchen.rocks/img/star-round.svg" alt="" style="margin:auto; height:50px; width:50px;">
-			<img src="http://www.canchen.rocks/img/three-lines.svg" alt="" style="margin:auto; height:50px; width:50px;">
+	<div class="Spacer-Div-H170p"></div>
+	<div class="404">
+		<div class="Spacer-Div-H170p"></div>
+		<h1>404 Page Not Found.</h1>
+		<div class="Spacer-Icon">
+			<img class="Spacer-Icon-LeftWing" src="img/three-lines-333333.svg" alt="">
+			<img src="img/star-round-333333.svg" alt="">
+			<img src="img/three-lines-333333.svg" alt="">
 		</div>
+		<div class="Spacer-Div-H25p"></></div>
+		<h2>
+			<a href="http://www.canchen.rocks/index.html" style="color:#000000;">
+				<u>Head Back to Homepage</u>
+			</a>
+		</h2>
 	</div>
-	<div style="height:50px;"></div>
-	<h1 style="color:#FFFFFF;"><a href="http://www.canchen.rocks/index.html"><u>Head Back to Homepage</u></a></h1>
-	<div style="height:250px;"></div>
+
 	
-	<div class="footer" style="background-color:#232F3E; min-height:200px; color:#FFFFFF; position: absolute; bottom:0; width:100%;">
-		<div style="height:20px;"></div>
-		<div style="display:inline-block; width:80%; max-width:270px; vertical-align:top; margin-left:10%; margin-right:10%;">
+	<div class="Footer" style="width:100%; position:absolute; bottom:0;">
+		<div class="Spacer-Div-H25p"></div>
+		<div class="Footer-ContentWraper">
 			<h1>
 				On The Web
 			</h1>
-			<a title="LinkedIn Profile" href="https://www.linkedin.com/in/can-chen"><img src="http://www.canchen.rocks/img/icon_white_linkedin.png" alt="LinkedIn"></img></a>
-			<a title="Github Repository" href="https://github.com/CCinCapital"><img src="http://www.canchen.rocks/img/icon_white_github.png" alt="Github"></img></a>
-			<a title="Thingiverse" href="http://www.thingiverse.com/CCinCapital/designs"><img src="http://www.canchen.rocks/img/icon_white_thingiverse.png" alt="Thingiverse"></img></a>
-			<a title="Instructables" href="http://www.instructables.com/member/CCinCapital/?publicView=true"><img src="http://www.canchen.rocks/img/icon_white_instructables.png" alt="Instructables"></img></a>
-			<a title="Find me on WeChat" href="img/QR_wechat.jpeg"><img src="http://www.canchen.rocks/img/icon_white_wechat.png" alt="WeChat"></img></a>
+			<a title="LinkedIn Profile" href="https://www.linkedin.com/in/can-chen"><img src="img/icon_white_linkedin.png" alt="LinkedIn"></img></a>
+			<a title="Github Repository" href="https://github.com/CCinCapital"><img src="img/icon_white_github.png" alt="Github"></img></a>
+			<a title="Thingiverse" href="http://www.thingiverse.com/CCinCapital/designs"><img src="img/icon_white_thingiverse.png" alt="Thingiverse"></img></a>
+			<a title="Instructables" href="http://www.instructables.com/member/CCinCapital/?publicView=true"><img src="img/icon_white_instructables.png" alt="Instructables"></img></a>
+			<a title="Find me on WeChat" href="img/QR_wechat.jpeg"><img src="img/icon_white_wechat.png" alt="WeChat"></img></a>
 		</div>
-		<div style="display:inline-block; width:80%; max-width:270px; vertical-align:top; margin-left:10%; margin-right:10%;">
+		<div class="Footer-ContentWraper">
 			<h1>
 				The Licenses
 			</h1>
-			<img src="http://www.canchen.rocks/img/cc.svg" alt=""></img>
-			<img src="http://www.canchen.rocks/img/by.svg" alt=""></img>
-			<img src="http://www.canchen.rocks/img/nc.svg" alt=""></img>
-			<img src="http://www.canchen.rocks/img/sa.svg" alt=""></img>
+			<img src="img/cc.svg" alt=""></img>
+			<img src="img/by.svg" alt=""></img>
+			<img src="img/nc.svg" alt=""></img>
+			<img src="img/sa.svg" alt=""></img>
 		</div>
-		<p style="font-size: 10px;"><a href="imprint.html">imprint&ensp;&ensp;&ensp;</a>&#9400 2017 CanChen.Rocks</p>
-		<div style="height:20px;"></div>
+		<p><a href="imprint.html">imprint&ensp;&ensp;&ensp;</a>&#9400 2017 CanChen.Rocks</p>
+		<div class="Spacer-Div-H15p"></div>
 	</div>
 </body>
