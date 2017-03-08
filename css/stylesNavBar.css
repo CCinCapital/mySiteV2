@@ -1,0 +1,72 @@
+/****NavBar****/
+.NavBar {
+	 position:fixed; 
+	 overflow:hidden; 
+	 z-index:9; 
+	 margin-top:0px; 
+	 height:170px; 
+	 width:100%; 
+	 background-color:#333333;
+}
+
+.NavBar-ContentWraper {
+	position:relative;
+	overflow:hidden;
+	display:relative;
+	height:100%;
+	width:85%;
+	margin:auto;
+}
+
+/****slogan****/
+.NavBar-ContentWraper-SloganWraper {
+	float:left; 
+	height:100%; 
+	display:table;
+}
+
+.NavBar-ContentWraper-SloganWraper a{
+	display:table-cell; 
+	vertical-align:middle; 
+	text-decoration: none;
+}
+
+.NavBar-ContentWraper-SloganWraper h1 {
+	color:#FFFFFF;
+}
+
+/****quick link****/
+.NavBar-ContentWraper-QuicklinkWraper {
+	float:right; 
+	height:100%; 
+	display:table;
+}
+
+.NavBar-ContentWraper-QuicklinkWraper div {
+	display:table-cell; 
+	vertical-align:middle;
+}
+
+.NavBar-ContentWraper-QuicklinkWraper ul {
+	float: left; 
+	list-style-type: none; 
+	overflow: hidden; 
+	font-size: 20px; 
+	margin:0px auto;
+}
+
+.NavBar-ContentWraper-QuicklinkWraper ul li {
+	float: left;
+}
+
+.NavBar-ContentWraper-QuicklinkWraper ul li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 16px;
+}
+
+.NavBar-ContentWraper-QuicklinkWraper ul li a:hover {
+	background-color: #111111;
+	color: #FFFFFF;
+}

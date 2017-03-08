@@ -1,0 +1,46 @@
+
+.WelcomeDiv {
+	background-color:#00AAA0;
+	color:#FFFFFF;
+	position:relative;
+	overflow:hidden;
+}
+
+.WelcomeDiv-PortraitWraper img{
+	margin:auto; 
+	width:80%; 
+	max-height:400px; 
+	max-width:400px; 
+}
+
+.WelcomeDiv h1{
+	display:inline-block; 
+	color:#FFFFFF; 
+	height:40px; 
+	vertical-align:middle; 
+	padding: 10px;
+}
+
+.WelcomeDiv h2{
+	margin: 0px;
+}
+ 
+.WelcomeDiv p {
+	display:table-cell;
+	padding:5px 5px;
+}
+ 
+.H1-English{
+	font-size: 2em; 
+}
+
+.H1-Chinese{
+	font-size: 1.6em; 
+}
+
+.WelcomeDiv-QuicklinkWraper {
+	display:table; 
+	width:90%; 
+	max-width: 500px; 
+	margin:auto;
+}
