@@ -1,4 +1,4 @@
-# www.canchen.rocks [In Progress]
+# www.canchen.rocks
 The second(current) version of my personal portfolio website
 
 ###DEMO
