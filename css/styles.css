@@ -38,6 +38,11 @@ li a {
 	height:50px;
 }
 
+.Spacer-Div-H50p-00AAA0 {
+	height:50px; 
+	background-color:#00AAA0; 
+}
+
 .Spacer-Div-H60p {
 	height:60px;
 }
@@ -257,21 +262,98 @@ li a {
 }
 
 .BioDiv h1 {
-	color:#333333;
+	color:#FFFFFF;
 }
 
-/*
-.BioDiv p {
-	display:inline-block;
-	color:#FFFFFF; 
-	width:60%;
-	min-width:200px;
-	max-width:388px;
-	margin:0px 30px 20px 30px; 
-	vertical-align:top; 
-	text-align:justify;
+.Bio-Content {
+	display: block;
+	position: relative;
+	font-variant: normal;
+	text-align: left;
+	min-height: 500px; 
+	width:80%; 
+	max-width: 700px; 
+	min-width: 600px;
+	background-color: #F7F7F9; 
+	margin:auto; 
+	border-radius: 20px; 
 }
-*/
+
+.Bio-Content ul{
+	width: 75%;
+	margin: auto;
+	padding: 0px;
+}
+
+.Bio-Content a {
+	display: block;
+	color: #000000;
+	padding: 20px;
+}
+
+.Bio-Content a:hover {
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+.Bio-Content a:active {
+	background-color: #000000;
+	color: #333333;
+	border-bottom: thick solid 10px;
+}
+
+.Bio-Content-Banner {
+	display: block;
+}
+
+.Bio-Content-Banner-ImgWraper {
+	display:inline-block; 
+	width: 150px; 
+	vertical-align:top;
+	margin-left: 17%;
+}
+
+.Bio-Content-Banner-ImgWraper img {
+	width:100%; 
+	border-radius:50%;
+}
+
+.Bio-Content-Banner-TextWraper {
+	display:inline-block; 
+	vertical-align:top;
+	padding-left: 50px;
+	padding-top: 15px;
+}
+
+.Bio-Content-Banner-TextWraper p {
+	font-size: 0.8em;
+	display: block;
+}
+
+.Bio-Content-Banner-TextWraper-Location {
+	display: block;
+}
+
+.Bio-Content-Banner-TextWraper-Location img {
+	display: inline-block;
+	height: 15px;
+}
+
+.Bio-Content-Banner-TextWraper-Location p {
+	display: inline-block;
+	
+	color: #5B6A6B;
+}
+
+.Bio-Content-Detail {
+	width: 80%;
+	margin: auto;
+}
+
+.Bio-Content-DetailDiv{
+	display: none;
+}
+
 
 /*******************/
 /****ContactsDiv****/
@@ -283,7 +365,9 @@ li a {
 	overflow:hidden;"
 }
 
-.ContactsDiv h1 {}
+.ContactsDiv h1 {
+	color:#333333;
+}
 
 .alert-none {
 	display: none;
