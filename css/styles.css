@@ -71,8 +71,7 @@ li a {
 }
 
 .Spacer-Icon-LeftWing {
-	transform:scaleX(-1); 
-	filter:FlipH; 
+	transform: scaleX(-1); 
 }
 
 /**************/
@@ -91,7 +90,6 @@ li a {
 .NavBar-ContentWraper {
 	position:relative;
 	overflow:hidden;
-	display:relative;
 	height:100%;
 	width:85%;
 	margin:auto;
@@ -258,7 +256,11 @@ li a {
 	background-color:#00AAA0;
 	margin:0px;
 	position:relative;
-	overflow:hidden;"
+	overflow:hidden;
+}
+
+.BioDiv ul li{
+	padding: 20px;
 }
 
 .BioDiv h1 {
@@ -294,12 +296,6 @@ li a {
 .Bio-Content a:hover {
 	background-color: #333333;
 	color: #FFFFFF;
-}
-
-.Bio-Content a:active {
-	background-color: #000000;
-	color: #333333;
-	border-bottom: thick solid 10px;
 }
 
 .Bio-Content-Banner {
@@ -362,7 +358,7 @@ li a {
 	background-color:#FFFFFF;
 	margin:0px; 
 	position:relative;
-	overflow:hidden;"
+	overflow:hidden;
 }
 
 .ContactsDiv h1 {
@@ -451,7 +447,7 @@ input[type=submit]:hover {
 /**************/
 /*****404******/
 /**************/
-.404 {
+.Error404 {
 	margin:0px; 
 	position:relative;
 	overflow:hidden;
