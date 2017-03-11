@@ -5,8 +5,7 @@
 	<title>CanChen.Rocks!</title>
 	<link rel="shortcut icon" href="img/engineer.svg">
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="script/Bio.js"></script>
+	<script type="text/javascript" src="script/Script.js"></script>
 </head>
 <body>
 	<div class="NavBar">
@@ -165,36 +164,36 @@
 		</div>
 		<div class="Spacer-Div-H25p"></div>
 		<ul>
-			<li><a id="Bio-About">About</a></li>
-			<li><a id="Bio-Experience">Experience</a></li>
-			<li><a id="Bio-Education">Education</a></li>
-			<li><a id="Bio-Skills">Skills</a></li>
-			<li><a id="Bio-Interests">Interests</a></li>
+			<li id="Bio-About">About</li>
+			<li id="Bio-Experience">Experience</li>
+			<li id="Bio-Education">Education</li>
+			<li id="Bio-Skills">Skills</li>
+			<li id="Bio-Interests">Interests</li>
 		</ul>	
 		<div class="Spacer-Div-H15p"></div>		
 		<div class="Bio-Content-Detail">
-			<div class="Bio-Content-DetailDiv">
+			<div id="Bio-Content-Detail-About" class="Bio-Content-DetailDiv">
 				<p>I am highly interested in the production and development of digital products. I've organized, managed and directed a number of events and projects, and worked in digital companies, allowing me to gain useful skills in managing resources and making things work. I'm passionate and energized by opportunities to create alrge-scale change.</p>
 			</div>
-			<div class="Bio-Content-DetailDiv" >
+			<div id="Bio-Content-Detail-Experience" class="Bio-Content-DetailDiv">
 				<p>Engineer Intern</p>
 				<p>Shandong Chencan Machinery Co., Ltd.,</p>
 				<p>May. 2016 - July. 2016</p>
 				<p>Shandong, China</p>
 			</div>
-			<div class="Bio-Content-DetailDiv" >
+			<div id="Bio-Content-Detail-Education" class="Bio-Content-DetailDiv">
 				<p>Bachlor of Engineering in Electrical</p>
 				<p>Carleton University</p>
 				<p>Sept. 2012 - Feb. 2017</p>
 				<p>Ottawa, Ontario, Canada</p>
 			</div>
-			<div class="Bio-Content-DetailDiv" >
+			<div id="Bio-Content-Detail-Skills" class="Bio-Content-DetailDiv">
 				<p>Analytical skills</p>
 				<p>Creative and Innovative</p>
 				<p>Work efficiently both individually and with team</p>
 				<p>Technical Skills</p>
 			</div>
-			<div class="Bio-Content-DetailDiv" >
+			<div id="Bio-Content-Detail-Interests" class="Bio-Content-DetailDiv">
 				<p>Circuit Design</p>
 				<p>3D Printing</p>
 				<p>Home Automation</p>
@@ -252,41 +251,5 @@
 		<p><a href="imprint.html">imprint&ensp;&ensp;&ensp;</a>&#9400 2017 CanChen.Rocks</p>
 		<div class="Spacer-Div-H15p"></div>
 	</div>
-	
-	<script>	
-		function formSubmit(e){
-			e.preventDefault();
-			
-			var name = document.getElementById('name').value;
-			var email = document.getElementById('email').value;
-			var website = document.getElementById('website').value;
-			var message = document.getElementById('message').value;
-			var msg = document.getElementById('msg');
-
-			if(name == '' || email == '' || message == ''){
-				msg.className="alert-error";
-				msg.innerHTML = 'Please fill out all necessary fields';
-			} else {
-				
-				var dataString = 'name='+ name + '&email=' + email + '&website=' + website + '&message=' + message;
-				
-				$.ajax({
-					type:"POST",
-					url:"contact_process.php",
-					dataType:"text",
-					data:dataString,
-					cache:false,
-					success: function(data){
-						console.log(dataString);
-						$('#echoBack').html(data);
-						msg.className="alert-success";
-						msg.innerHTML = 'Your message has successfully sent to Can.';
-					}
-				});
-			}
-			return false;			
-		}
-		document.getElementById('myForm').addEventListener('submit', formSubmit, false);
-	</script>
 </body>
 </html>
