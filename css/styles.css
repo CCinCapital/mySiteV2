@@ -64,6 +64,13 @@ li a {
 	background-color:#00AAA0; 
 }
 
+.Spacer-Line-H1p {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height:1px;
+	background-color: #808080;
+}
+
 .Spacer-Icon img{
 	margin:auto; 
 	height:50px; 
@@ -260,7 +267,8 @@ li a {
 }
 
 .BioDiv ul li{
-	padding: 20px;
+	padding: 10px 20px;
+	margin: 10px 0px;
 }
 
 .BioDiv h1 {
@@ -273,7 +281,6 @@ li a {
 	font-variant: normal;
 	text-align: left;
 	min-height: 500px; 
-	width:80%; 
 	max-width: 700px; 
 	min-width: 600px;
 	background-color: #F7F7F9; 
@@ -285,17 +292,6 @@ li a {
 	width: 75%;
 	margin: auto;
 	padding: 0px;
-}
-
-.Bio-Content a {
-	display: block;
-	color: #000000;
-	padding: 20px;
-}
-
-.Bio-Content a:hover {
-	background-color: #333333;
-	color: #FFFFFF;
 }
 
 .Bio-Content-Banner {
@@ -337,7 +333,6 @@ li a {
 
 .Bio-Content-Banner-TextWraper-Location p {
 	display: inline-block;
-	
 	color: #5B6A6B;
 }
 
@@ -348,8 +343,56 @@ li a {
 
 .Bio-Content-DetailDiv{
 	display: none;
+	line-height: 30px;
 }
 
+.Bio-Content-DetailDiv-p1 {
+	vertical-align: top;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+
+.Bio-Content-DetailDiv-p2 {
+	vertical-align: top;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+
+.Bio-Content-DetailDiv-p3 {
+	vertical-align: top;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	float:right; 
+	font-size: 0.8em;
+}
+
+.Bio-Content-DetailDiv-p4 {
+	vertical-align: top;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 5px;
+	font-size: 1em;
+	font-style: italic;
+}
+
+#Bio-Content-Detail-Skills ul {
+	width: 100%;
+}
+
+#Bio-Content-Detail-Skills ul li {
+	padding: 0px;
+	margin: 0px;
+}
+
+#Bio-Content-Detail-Skills ul li p {
+	padding: 0px;
+	margin: 0px;
+	font-size: 0.9em;
+}
 
 /*******************/
 /****ContactsDiv****/

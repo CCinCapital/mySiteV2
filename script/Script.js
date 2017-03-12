@@ -89,24 +89,24 @@ window.onload = function () {
 		showOnly(active_div);
 	});
 	
-	var interests = document.getElementById('Bio-Interests');
-	interests.addEventListener('mouseenter', function(){
-		if(skills != interests) {
-			mouseOver(interests);
+	var Learning = document.getElementById('Bio-Learning');
+	Learning.addEventListener('mouseenter', function(){
+		if(skills != Learning) {
+			mouseOver(Learning);
 		}
 	});
-	interests.addEventListener('mouseleave', function(){
-		if(interests != active_tab) {
-			deactiveTab(interests);
+	Learning.addEventListener('mouseleave', function(){
+		if(Learning != active_tab) {
+			deactiveTab(Learning);
 		}
 	});
-	interests.addEventListener('click', function(){
-		if (interests != active_tab) {
+	Learning.addEventListener('click', function(){
+		if (Learning != active_tab) {
 			deactiveTab(active_tab);
-			activateTab(interests);
+			activateTab(Learning);
 		}
-		active_tab = document.getElementById('Bio-Interests');
-		active_div = document.getElementById('Bio-Content-Detail-Interests');
+		active_tab = document.getElementById('Bio-Learning');
+		active_div = document.getElementById('Bio-Content-Detail-Learning');
 		showOnly(active_div);
 	});
 	
