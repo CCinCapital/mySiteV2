@@ -281,15 +281,15 @@ li a {
 	font-variant: normal;
 	text-align: left;
 	min-height: 500px; 
-	max-width: 700px; 
-	min-width: 600px;
+	max-width: 750px; 
+	min-width: 750px;
 	background-color: #F7F7F9; 
 	margin:auto; 
 	border-radius: 20px; 
 }
 
 .Bio-Content ul{
-	width: 75%;
+	width: 67%;
 	margin: auto;
 	padding: 0px;
 }
@@ -302,7 +302,7 @@ li a {
 	display:inline-block; 
 	width: 150px; 
 	vertical-align:top;
-	margin-left: 17%;
+	margin-left: 20%;
 }
 
 .Bio-Content-Banner-ImgWraper img {
@@ -379,16 +379,7 @@ li a {
 	font-style: italic;
 }
 
-#Bio-Content-Detail-Skills ul {
-	width: 100%;
-}
-
-#Bio-Content-Detail-Skills ul li {
-	padding: 0px;
-	margin: 0px;
-}
-
-#Bio-Content-Detail-Skills ul li p {
+.Bio-Content-DetailDiv-p5 {
 	padding: 0px;
 	margin: 0px;
 	font-size: 0.9em;
