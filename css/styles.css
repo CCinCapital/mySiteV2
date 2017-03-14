@@ -230,8 +230,8 @@ li a {
 	vertical-align: top;
 	width: 80%;
 	max-width:226px;
-	margin: 10px;
-	overflow: hidden;
+	margin: 0px 10px;
+	overflow: hidden;	
 }
 
 .ProjectsDiv-ProjectsWraper-Project img {
@@ -241,6 +241,7 @@ li a {
 	max-width: 200px;
 	margin: 13px 13px 13px 13px;
 }
+
 .ProjectsDiv-ProjectsWraper-Project img:hover {
 	height: 100%;
 	max-height: 226px; 
@@ -253,6 +254,27 @@ li a {
 .ProjectsDiv-ProjectsWraper-Project-Name {
 	padding: 0px 20px;
 	color: #333333;
+}
+
+.Project-Pointer {
+	padding: 0px;
+	margin: auto;
+	width: 0; 
+	height: 0; 
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid #F1F1F1;
+	display: none;
+}
+
+.ProjectsDiv-ProjectsWraper-Project-Description {
+	width: 60%;
+	height: 400px;
+	background-color: #F1F1F1;
+	margin: auto;
+	display: none;
+	margin-bottom: 40px;
+	border-radius: 25px;	
 }
 
 

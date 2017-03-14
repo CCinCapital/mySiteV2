@@ -1,5 +1,86 @@
 window.onload = function () {
 
+	var project1 = document.getElementById('Project1');
+	var project1_pointer = document.getElementById('Project1-Pointer');
+	var project1_description = document.getElementById('Project1-Description');
+	project1.addEventListener('click',function(){
+		if (project1_description.style.display == 'none') {
+			displayProject(project1_pointer, project1_description);
+		}
+		else {
+			hideProject(project1_pointer, project1_description);
+		}
+	});
+
+	var project2 = document.getElementById('Project2');
+	var project2_pointer = document.getElementById('Project2-Pointer');
+	var project2_description = document.getElementById('Project2-Description');
+	project2.addEventListener('click',function(){
+		if (project2_description.style.display == 'none') {
+			displayProject(project2_pointer, project2_description);
+		}
+		else {
+			hideProject(project2_pointer, project2_description);
+		}
+	});
+	
+	var project3 = document.getElementById('Project3');
+	var project3_pointer = document.getElementById('Project3-Pointer');
+	var project3_description = document.getElementById('Project3-Description');
+	project3.addEventListener('click',function(){
+		if (project3_description.style.display == 'none') {
+			displayProject(project3_pointer, project3_description);
+		}
+		else {
+			hideProject(project3_pointer, project3_description);
+		}
+	});
+	
+	var project4 = document.getElementById('Project4');
+	var project4_pointer = document.getElementById('Project4-Pointer');
+	var project4_description = document.getElementById('Project4-Description');
+	project4.addEventListener('click',function(){
+		if (project4_description.style.display == 'none') {
+			displayProject(project4_pointer, project4_description);
+		}
+		else {
+			hideProject(project4_pointer, project4_description);
+		}
+	});
+	
+	var project5 = document.getElementById('Project5');
+	var project5_pointer = document.getElementById('Project5-Pointer');
+	var project5_description = document.getElementById('Project5-Description');
+	project5.addEventListener('click',function(){
+		if (project5_description.style.display == 'none') {
+			displayProject(project5_pointer, project5_description);
+		}
+		else {
+			hideProject(project5_pointer, project5_description);
+		}
+	});
+	
+	var project6 = document.getElementById('Project6');
+	var project6_pointer = document.getElementById('Project6-Pointer');
+	var project6_description = document.getElementById('Project6-Description');
+	project6.addEventListener('click',function(){
+		if (project6_description.style.display == 'none') {
+			displayProject(project6_pointer, project6_description);
+		}
+		else {
+			hideProject(project6_pointer, project6_description);
+		}
+	});
+	
+	hideProject(project1_pointer, project1_description);
+	hideProject(project2_pointer, project2_description);
+	hideProject(project3_pointer, project3_description);
+	hideProject(project4_pointer, project4_description);
+	hideProject(project5_pointer, project5_description);
+	hideProject(project6_pointer, project6_description);
+	
+	
+	
 	var active_tab = document.getElementById('Bio-About');
 	var active_div = document.getElementById('Bio-Content-Detail-About');
 	activateTab(active_tab);
@@ -118,6 +199,16 @@ var background_inactive = "#F7F7F9";
 var background_mouseover = "gray"
 var text_active = "#FFFFFF";
 var text_inactive = "#000000";
+
+function displayProject(pointer, project) {
+	pointer.style.display = 'block';
+	project.style.display = 'block';
+}
+
+function hideProject(pointer, project) {
+	pointer.style.display = 'none';
+	project.style.display = 'none';
+}
 
 function mouseOver(mouseOver_tab) {
 	mouseOver_tab.style.backgroundColor = background_mouseover;
