@@ -14,8 +14,8 @@ window.onload = function () {
 	var project1_description = document.getElementById('Project1-Description');
 	project1.addEventListener('click',function(){
 		showOnly(project1_pointer, 'Project-Pointer');
-		showOnly(project1_description, 'ProjectsDiv-ProjectsWraper-Project-Description');
-		window.scrollTo(0,1180);
+		showOnly(project1_description, 'ProjectsDiv-Project-Description');
+		scrollToY(1230);
 	});
 
 	var project2 = document.getElementById('Project2');
@@ -23,8 +23,8 @@ window.onload = function () {
 	var project2_description = document.getElementById('Project2-Description');
 	project2.addEventListener('click',function(){
 		showOnly(project2_pointer, 'Project-Pointer');
-		showOnly(project3_description, 'ProjectsDiv-ProjectsWraper-Project-Description');
-		window.scrollTo(0,1180);
+		showOnly(project2_description, 'ProjectsDiv-Project-Description');
+		scrollToY(1230);
 	});
 	
 	var project3 = document.getElementById('Project3');
@@ -32,8 +32,8 @@ window.onload = function () {
 	var project3_description = document.getElementById('Project3-Description');
 	project3.addEventListener('click',function(){
 		showOnly(project3_pointer, 'Project-Pointer');
-		showOnly(project3_description, 'ProjectsDiv-ProjectsWraper-Project-Description');
-		window.scrollTo(0,1180);
+		showOnly(project3_description, 'ProjectsDiv-Project-Description');
+		scrollToY(1230);
 	});
 	
 	var project4 = document.getElementById('Project4');
@@ -41,8 +41,8 @@ window.onload = function () {
 	var project4_description = document.getElementById('Project4-Description');
 	project4.addEventListener('click',function(){
 		showOnly(project4_pointer, 'Project-Pointer');
-		showOnly(project4_description, 'ProjectsDiv-ProjectsWraper-Project-Description');
-		window.scrollTo(0,1570);
+		showOnly(project4_description, 'ProjectsDiv-Project-Description');
+		scrollToY(1585);
 	});
 	
 	var project5 = document.getElementById('Project5');
@@ -50,8 +50,8 @@ window.onload = function () {
 	var project5_description = document.getElementById('Project5-Description');
 	project5.addEventListener('click',function(){
 		showOnly(project5_pointer, 'Project-Pointer');
-		showOnly(project5_description, 'ProjectsDiv-ProjectsWraper-Project-Description');
-		window.scrollTo(0,1570);
+		showOnly(project5_description, 'ProjectsDiv-Project-Description');
+		scrollToY(1585);
 	});
 	
 	var project6 = document.getElementById('Project6');
@@ -59,8 +59,8 @@ window.onload = function () {
 	var project6_description = document.getElementById('Project6-Description');
 	project6.addEventListener('click',function(){
 		showOnly(project6_pointer, 'Project-Pointer');
-		showOnly(project6_description, 'ProjectsDiv-ProjectsWraper-Project-Description');
-		window.scrollTo(0,1570);
+		showOnly(project6_description, 'ProjectsDiv-Project-Description');
+		scrollToY(1585);
 	});
 	
 	hideProject(project1_pointer, project1_description);
@@ -201,6 +201,17 @@ function hideProject(pointer, project) {
 	project.style.display = 'none';
 }
 
+function scrollToY(offset) {		
+	var timerID = setInterval(function() {
+		if( window.pageYOffset >= offset ) {
+			clearInterval(timerID);
+		}
+		else {
+			window.scrollBy(0, 15);
+		}
+	}, 13); 
+}
+
 function mouseOver(mouseOver_tab) {
 	mouseOver_tab.style.backgroundColor = background_mouseover;
 }
@@ -242,7 +253,7 @@ function formSubmit(e){
 		
 		$.ajax({
 			type:"POST",
-			url:"contact_process.php",
+			url:"php/contact_process.php",
 			dataType:"text",
 			data:dataString,
 			cache:false,
@@ -256,3 +267,4 @@ function formSubmit(e){
 	}
 	return false;			
 }
+

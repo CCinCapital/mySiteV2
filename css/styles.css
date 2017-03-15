@@ -15,6 +15,7 @@ a {
 a:hover {
 	color: #333333;
 }
+
 ul {
 	list-style-type: none; 
 	overflow: hidden; 
@@ -257,6 +258,7 @@ li a {
 .ProjectsDiv-ProjectsWraper {
 	width:80%; 
 	max-width: 750px;
+	min-width: 750px;
 	margin:auto;
 }
 
@@ -265,7 +267,7 @@ li a {
 	vertical-align: top;
 	width: 80%;
 	max-width:226px;
-	margin: 0px 10px;
+	margin: 20px 10px 10px 10px;
 	overflow: hidden;	
 }
 
@@ -302,14 +304,41 @@ li a {
 	display: none;
 }
 
-.ProjectsDiv-ProjectsWraper-Project-Description {
-	width: 100%;
-	height: 400px;
+
+.ProjectsDiv-Project-Description {
 	background-color: #F1F1F1;
-	margin: auto;
 	display: none;
-	margin-bottom: 40px;
-	border-radius: 25px;	
+	left: 0px;
+	right: 0px;
+	padding: 15px;
+}
+
+.ProjectsDiv-Project-Description-Title {
+	line-height: 3em; 
+	font-weight: bold;
+	margin: 0px;
+}
+
+.ProjectsDiv-Project-Description h3 {
+	font-size: 1.3em;
+	padding: 0px;
+}
+
+.ProjectsDiv-Project-Description p {
+	font-variant: normal;
+}
+
+.ProjectsDiv-Project-Description a {
+	color: #333333;
+	display: block;
+	border: 1px solid #333333;
+	width: 450px;
+	margin: auto;
+}
+
+.ProjectsDiv-Project-Description a:hover {
+	color: #FFFFFF;
+	background-color: #333333;
 }
 
 
@@ -543,4 +572,16 @@ input[type=submit]:hover {
 	position:relative;
 	overflow:hidden;
 	color: #000000;
+}
+
+.imprint {
+	margin:0px; 
+	position:relative;
+	overflow:hidden;
+	color: #000000;
+}
+
+.imprint a {
+	color: #000000;
+	font-weight: bold;
 }

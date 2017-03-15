@@ -1,3 +1,0 @@
-- Update the functionality of CONTACT form, change to send SMS to my phone.
-- Add dedicated pages for each project
-- Add customized pages(collection of revelant projects) for each position applied 
