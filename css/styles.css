@@ -47,6 +47,7 @@ li a {
 .Spacer-Div-H50p-00AAA0 {
 	height:50px; 
 	background-color:#00AAA0; 
+	margin-top: -1px;
 }
 
 .Spacer-Div-H60p {
@@ -60,6 +61,7 @@ li a {
 .Spacer-Div-H100p-00AAA0 {
 	height:100px; 
 	background-color:#00AAA0; 
+	margin-top: -1px;
 }
 
 .Spacer-Div-H120p {
@@ -269,6 +271,21 @@ li a {
 	max-width:226px;
 	margin: 20px 10px 10px 10px;
 	overflow: hidden;	
+	border: 1px hidden #e1e1e1;
+	border-radius: 40px;
+}
+
+.ProjectsDiv-ProjectsWraper-Project:hover {
+	margin: 19px 9px 7px 9px;
+	border-style: solid;
+	border-color: #5F5F5F;
+	border-bottom-width: 3px;
+}
+
+.borderClass {
+	margin: 19px 9px 7px 9px;
+	border-style:solid;
+	border-bottom: 3px solid #e1e1e1;
 }
 
 .ProjectsDiv-ProjectsWraper-Project img {
