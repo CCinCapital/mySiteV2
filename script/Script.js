@@ -180,7 +180,7 @@ function animateProjectDescription(this_project) {
 		$("#"+this_project.toString()+"-Description").fadeIn("slow");
 		$(this_div).slideDown("slow");
 		$('html, body').animate({
-			scrollTop: $("#"+this_project.toString()).offset().top - 100
+			scrollTop: $("#"+this_project.toString()).offset().top - 120
 		}, 1000);
 	}
 	active_project = this_project;
