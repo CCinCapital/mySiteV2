@@ -1,4 +1,5 @@
 window.onload = function () {
+	//Shrink Header on scroll down
 	window.addEventListener('scroll', function(){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop;
         var shrinkOn = 300;
@@ -9,73 +10,51 @@ window.onload = function () {
 		}
     });
 
-	var project1 = document.getElementById('Project1');
-	var project1_pointer = document.getElementById('Project1-Pointer');
-	var project1_description = document.getElementById('Project1-Description');
-	project1.addEventListener('click',function(){
-		showOnly(project1_pointer, 'Project-Pointer');
-		showOnly(project1_description, 'ProjectsDiv-Project-Description');
-		scrollToY(1230);
+	//Hide/Display project description on click project img/name
+	var projectGrpY_1 = 1230, 	//location of page, in px;
+		projectGrpY_2 = 1585;
+	
+	document.getElementById('Project1').addEventListener('click',function(){
+		showOnly(document.getElementById('Project1-Pointer'), 'Project-Pointer');
+		showOnly(document.getElementById('Project1-Description'), 'ProjectsDiv-Project-Description');
+		scrollToY(projectGrpY_1);
 	});
 
-	var project2 = document.getElementById('Project2');
-	var project2_pointer = document.getElementById('Project2-Pointer');
-	var project2_description = document.getElementById('Project2-Description');
-	project2.addEventListener('click',function(){
-		showOnly(project2_pointer, 'Project-Pointer');
-		showOnly(project2_description, 'ProjectsDiv-Project-Description');
-		scrollToY(1230);
+	document.getElementById('Project2').addEventListener('click',function(){
+		showOnly(document.getElementById('Project2-Pointer'), 'Project-Pointer');
+		showOnly(document.getElementById('Project2-Description'), 'ProjectsDiv-Project-Description');
+		scrollToY(projectGrpY_1);
 	});
 	
-	var project3 = document.getElementById('Project3');
-	var project3_pointer = document.getElementById('Project3-Pointer');
-	var project3_description = document.getElementById('Project3-Description');
-	project3.addEventListener('click',function(){
-		showOnly(project3_pointer, 'Project-Pointer');
-		showOnly(project3_description, 'ProjectsDiv-Project-Description');
-		scrollToY(1230);
+	document.getElementById('Project3').addEventListener('click',function(){
+		showOnly(document.getElementById('Project3-Pointer'), 'Project-Pointer');
+		showOnly(document.getElementById('Project3-Description'), 'ProjectsDiv-Project-Description');
+		scrollToY(projectGrpY_1);
 	});
 	
-	var project4 = document.getElementById('Project4');
-	var project4_pointer = document.getElementById('Project4-Pointer');
-	var project4_description = document.getElementById('Project4-Description');
-	project4.addEventListener('click',function(){
-		showOnly(project4_pointer, 'Project-Pointer');
-		showOnly(project4_description, 'ProjectsDiv-Project-Description');
-		scrollToY(1585);
+	document.getElementById('Project4').addEventListener('click',function(){
+		showOnly(document.getElementById('Project4-Pointer'), 'Project-Pointer');
+		showOnly(document.getElementById('Project4-Description'), 'ProjectsDiv-Project-Description');
+		scrollToY(projectGrpY_2);
 	});
 	
-	var project5 = document.getElementById('Project5');
-	var project5_pointer = document.getElementById('Project5-Pointer');
-	var project5_description = document.getElementById('Project5-Description');
-	project5.addEventListener('click',function(){
-		showOnly(project5_pointer, 'Project-Pointer');
-		showOnly(project5_description, 'ProjectsDiv-Project-Description');
-		scrollToY(1585);
+	document.getElementById('Project5').addEventListener('click',function(){
+		showOnly(document.getElementById('Project5-Pointer'), 'Project-Pointer');
+		showOnly(document.getElementById('Project5-Description'), 'ProjectsDiv-Project-Description');
+		scrollToY(projectGrpY_2);
 	});
 	
-	var project6 = document.getElementById('Project6');
-	var project6_pointer = document.getElementById('Project6-Pointer');
-	var project6_description = document.getElementById('Project6-Description');
-	project6.addEventListener('click',function(){
-		showOnly(project6_pointer, 'Project-Pointer');
-		showOnly(project6_description, 'ProjectsDiv-Project-Description');
-		scrollToY(1585);
+	document.getElementById('Project6').addEventListener('click',function(){
+		showOnly(document.getElementById('Project6-Pointer'), 'Project-Pointer');
+		showOnly(document.getElementById('Project6-Description'), 'ProjectsDiv-Project-Description');
+		scrollToY(projectGrpY_2);
 	});
 	
-	hideProject(project1_pointer, project1_description);
-	hideProject(project2_pointer, project2_description);
-	hideProject(project3_pointer, project3_description);
-	hideProject(project4_pointer, project4_description);
-	hideProject(project5_pointer, project5_description);
-	hideProject(project6_pointer, project6_description);
 	
-	
-	
+	//BIO Default display/hight About secion
 	var active_tab = document.getElementById('Bio-About');
-	var active_div = document.getElementById('Bio-Content-Detail-About');
 	activateTab(active_tab);
-	showOnly(active_div, 'Bio-Content-DetailDiv');
+	showOnly(document.getElementById('Bio-Content-Detail-About'), 'Bio-Content-DetailDiv');
 	
 	var about = document.getElementById('Bio-About');
 	about.addEventListener('mouseenter', function(){
@@ -94,8 +73,7 @@ window.onload = function () {
 			activateTab(about);
 		}
 		active_tab = document.getElementById('Bio-About');
-		active_div = document.getElementById('Bio-Content-Detail-About');
-		showOnly(active_div, 'Bio-Content-DetailDiv');
+		showOnly(document.getElementById('Bio-Content-Detail-About'), 'Bio-Content-DetailDiv');
 	});
 	
 	var experience = document.getElementById('Bio-Experience');
@@ -115,8 +93,7 @@ window.onload = function () {
 			activateTab(experience);
 		}
 		active_tab = document.getElementById('Bio-Experience');
-		active_div = document.getElementById('Bio-Content-Detail-Experience');
-		showOnly(active_div, 'Bio-Content-DetailDiv');
+		showOnly(document.getElementById('Bio-Content-Detail-Experience'), 'Bio-Content-DetailDiv');
 	});
 	
 	var education = document.getElementById('Bio-Education');
@@ -136,8 +113,7 @@ window.onload = function () {
 			activateTab(education);
 		}
 		active_tab = document.getElementById('Bio-Education');
-		active_div = document.getElementById('Bio-Content-Detail-Education');
-		showOnly(active_div, 'Bio-Content-DetailDiv');
+		showOnly(document.getElementById('Bio-Content-Detail-Education'), 'Bio-Content-DetailDiv');
 	});
 	
 	var skills = document.getElementById('Bio-Skills');
@@ -157,8 +133,7 @@ window.onload = function () {
 			activateTab(skills);
 		}
 		active_tab = document.getElementById('Bio-Skills');
-		active_div = document.getElementById('Bio-Content-Detail-Skills');
-		showOnly(active_div, 'Bio-Content-DetailDiv');
+		showOnly(document.getElementById('Bio-Content-Detail-Skills'), 'Bio-Content-DetailDiv');
 	});
 	
 	var Learning = document.getElementById('Bio-Learning');
@@ -178,10 +153,10 @@ window.onload = function () {
 			activateTab(Learning);
 		}
 		active_tab = document.getElementById('Bio-Learning');
-		active_div = document.getElementById('Bio-Content-Detail-Learning');
-		showOnly(active_div, 'Bio-Content-DetailDiv');
+		showOnly(document.getElementById('Bio-Content-Detail-Learning'), 'Bio-Content-DetailDiv');
 	});
 	
+	//Contact Form 
 	document.getElementById('myForm').addEventListener('submit', formSubmit, false);
 }
 
