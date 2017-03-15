@@ -2,7 +2,7 @@ window.onload = function () {
 	//Shrink Header on scroll down
 	window.addEventListener('scroll', function(){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-        var shrinkOn = 300;
+        var shrinkOn = 300; //trigger point
         if (distanceY > shrinkOn) {
             document.getElementById("header").className = "NavBar-Smaller";
         } else {
@@ -40,7 +40,7 @@ window.onload = function () {
 	var active_tab = document.getElementById('Bio-About');
 	activateTab(active_tab);
 	showOnly(document.getElementById('Bio-Content-Detail-About'), 'Bio-Content-DetailDiv');
-	
+	//BIO event listeners
 	var about = document.getElementById('Bio-About');
 	about.addEventListener('mouseenter', function(){
 		if(about != active_tab) {
@@ -155,38 +155,36 @@ var text_inactive = "#000000";
 var active_div = null;
 var active_project = null;
 function animateProjectDescription(this_project) {
-	var parnet_div = "#"+$("#"+this_project.toString()+"-Description").parent().closest('div').parent().attr('id');
+	var this_div = "#"+$("#"+this_project.toString()+"-Description").parent().closest('div').parent().attr('id');
 
-	if (active_div == parnet_div) {	
-		if (active_project == this_project) {
+	if (active_div == this_div) {				
+		if (active_project == this_project) {	//close description
 			$("#"+this_project.toString()+"-Description").fadeOut("slow");
 			$(active_div).slideUp("slow");
 			active_div = null;
 			active_project = null;
 			return;
 		}
-		else {
+		else {									//hide active, show current 
 			if (active_project != null) {
 				$("#"+active_project.toString()+"-Description").hide();
 			}
 			$("#"+this_project.toString()+"-Description").fadeIn("slow");
-			active_project = this_project;
-			active_div = parnet_div
 		}
 	}
-	else {
+	else {										//open description
 		if (active_div != null) {
 			$("#"+active_project.toString()+"-Description").hide();
 			$(active_div).hide();
 		}
 		$("#"+this_project.toString()+"-Description").fadeIn("slow");
-		$(parnet_div).slideDown("slow");
+		$(this_div).slideDown("slow");
 		$('html, body').animate({
-			scrollTop: $("#"+this_project.toString()).offset().top
+			scrollTop: $("#"+this_project.toString()).offset().top - 100
 		}, 1000);
-		active_project = this_project;
-		active_div = parnet_div;
 	}
+	active_project = this_project;
+	active_div = this_div;
 }
 
 function displayProject(pointer, project) {
