@@ -11,43 +11,28 @@ window.onload = function () {
     });
 
 	//Hide/Display project description on click project img/name
-	var projectGrpY_1 = 1230, 	//location of page, in px;
-		projectGrpY_2 = 1585;
-	
-	document.getElementById('Project1').addEventListener('click',function(){
-		showOnly(document.getElementById('Project1-Pointer'), 'Project-Pointer');
-		showOnly(document.getElementById('Project1-Description'), 'ProjectsDiv-Project-Description');
-		scrollToY(projectGrpY_1);
+	$("#Project1").click(function(){
+		animateProjectDescription(this.id);
 	});
 
-	document.getElementById('Project2').addEventListener('click',function(){
-		showOnly(document.getElementById('Project2-Pointer'), 'Project-Pointer');
-		showOnly(document.getElementById('Project2-Description'), 'ProjectsDiv-Project-Description');
-		scrollToY(projectGrpY_1);
+	$("#Project2").click(function(){
+		animateProjectDescription(this.id);
 	});
 	
-	document.getElementById('Project3').addEventListener('click',function(){
-		showOnly(document.getElementById('Project3-Pointer'), 'Project-Pointer');
-		showOnly(document.getElementById('Project3-Description'), 'ProjectsDiv-Project-Description');
-		scrollToY(projectGrpY_1);
+	$("#Project3").click(function(){
+		animateProjectDescription(this.id);
 	});
 	
-	document.getElementById('Project4').addEventListener('click',function(){
-		showOnly(document.getElementById('Project4-Pointer'), 'Project-Pointer');
-		showOnly(document.getElementById('Project4-Description'), 'ProjectsDiv-Project-Description');
-		scrollToY(projectGrpY_2);
+	$("#Project4").click(function(){
+		animateProjectDescription(this.id);
 	});
 	
-	document.getElementById('Project5').addEventListener('click',function(){
-		showOnly(document.getElementById('Project5-Pointer'), 'Project-Pointer');
-		showOnly(document.getElementById('Project5-Description'), 'ProjectsDiv-Project-Description');
-		scrollToY(projectGrpY_2);
+	$("#Project5").click(function(){
+		animateProjectDescription(this.id);
 	});
 	
-	document.getElementById('Project6').addEventListener('click',function(){
-		showOnly(document.getElementById('Project6-Pointer'), 'Project-Pointer');
-		showOnly(document.getElementById('Project6-Description'), 'ProjectsDiv-Project-Description');
-		scrollToY(projectGrpY_2);
+	$("#Project6").click(function(){
+		animateProjectDescription(this.id);
 	});
 	
 	
@@ -160,11 +145,49 @@ window.onload = function () {
 	document.getElementById('myForm').addEventListener('submit', formSubmit, false);
 }
 
+
 var background_active = "#333333";
 var background_inactive = "#F7F7F9";
 var background_mouseover = "gray"
 var text_active = "#FFFFFF";
 var text_inactive = "#000000";
+
+var active_div = null;
+var active_project = null;
+function animateProjectDescription(this_project) {
+	var parnet_div = "#"+$("#"+this_project.toString()+"-Description").parent().closest('div').parent().attr('id');
+
+	if (active_div == parnet_div) {	
+		if (active_project == this_project) {
+			$("#"+this_project.toString()+"-Description").fadeOut("slow");
+			$(active_div).slideUp("slow");
+			active_div = null;
+			active_project = null;
+			return;
+		}
+		else {
+			if (active_project != null) {
+				$("#"+active_project.toString()+"-Description").hide();
+			}
+			$("#"+this_project.toString()+"-Description").fadeIn("slow");
+			active_project = this_project;
+			active_div = parnet_div
+		}
+	}
+	else {
+		if (active_div != null) {
+			$("#"+active_project.toString()+"-Description").hide();
+			$(active_div).hide();
+		}
+		$("#"+this_project.toString()+"-Description").fadeIn("slow");
+		$(parnet_div).slideDown("slow");
+		$('html, body').animate({
+			scrollTop: $("#"+this_project.toString()).offset().top
+		}, 1000);
+		active_project = this_project;
+		active_div = parnet_div;
+	}
+}
 
 function displayProject(pointer, project) {
 	pointer.style.display = 'block';
@@ -201,13 +224,13 @@ function deactiveTab(deactive_Tab) {
 	deactive_Tab.style.color = text_inactive;
 }
 
-function showOnly(active_div, class_name) {
+function showOnly(active_tab, class_name) {
 	var x = document.getElementsByClassName(class_name);
 	var i;
 	for (i = 0; i < x.length; i++) {
 		x[i].style.display = 'none';
 	}
-	active_div.style.display = 'block';
+	active_tab.style.display = 'block';
 }
 
 function formSubmit(e){
