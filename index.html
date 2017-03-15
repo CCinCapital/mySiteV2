@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="script/Script.js"></script>
 </head>
 <body>
-	<div class="NavBar">
+	<div id="header" class="NavBar">
 		<div class="NavBar-ContentWraper">
 			<div class="NavBar-ContentWraper-SloganWraper">
 				<a href="#Home" >
@@ -62,9 +62,9 @@
 	</div>
 	<div class="Spacer-Div-H50p-00AAA0"></div>
 	
-	<div id="Projects" class="Spacer-Div-H100p-00AAA0"></div>
-	<div class="ProjectsDiv">
-		<div class="Spacer-Div-H100p"></div>
+	<div class="Spacer-Div-H100p-00AAA0"></div>
+	<div id="Projects" class="ProjectsDiv">
+		<div class="Spacer-Div-H120p"></div>
 		<h1>Projects</h1>
 		<div class="Spacer-Icon">
 			<img class="Spacer-Icon-LeftWing" src="img/three-lines-333333.svg" alt="">
@@ -77,27 +77,38 @@
 				<div>
 					<img src="img/window-blinds.svg" alt=""></img>
 				</div>
+				<div class="ProjectsDiv-ProjectsWraper-Project-Name">
+					<h3>Smart<br>Blinds Roller</h3>
+				</div>
 				<div id="Project1-Pointer" class="Project-Pointer"></div>
 			</div>
-			<div id="Project1-Description" class="ProjectsDiv-ProjectsWraper-Project-Description">
-					
-			</div>
+
 			
 			<div id="Project2" class="ProjectsDiv-ProjectsWraper-Project">
 				<div>
 					<img src="img/3d-printer.svg" alt=""></img>
 				</div>
+				<div class="ProjectsDiv-ProjectsWraper-Project-Name">
+					<h3>Printhead Driver<br>[in progress]</h3>
+				</div>
 				<div id="Project2-Pointer" class="Project-Pointer"></div>
 			</div>
-			<div id="Project2-Description" class="ProjectsDiv-ProjectsWraper-Project-Description">
-					
-			</div>
+
 			
 			<div id="Project3" class="ProjectsDiv-ProjectsWraper-Project">
 				<div>
 					<img src="img/browser.svg" alt=""></img>
 				</div>
+				<div class="ProjectsDiv-ProjectsWraper-Project-Name">
+					<h3>This Website</h3>
+				</div>
 				<div id="Project3-Pointer" class="Project-Pointer"></div>
+			</div>
+			<div id="Project1-Description" class="ProjectsDiv-ProjectsWraper-Project-Description">
+					
+			</div>
+			<div id="Project2-Description" class="ProjectsDiv-ProjectsWraper-Project-Description">
+					
 			</div>
 			<div id="Project3-Description" class="ProjectsDiv-ProjectsWraper-Project-Description">
 					
@@ -107,27 +118,34 @@
 				<div>
 					<img src="img/mirror.svg" alt=""></img>
 				</div>
+				<div class="ProjectsDiv-ProjectsWraper-Project-Name">
+					<h3>Hollywood-Like<br>Vanity Mirror</h3>
+				</div>
 				<div id="Project4-Pointer" class="Project-Pointer"></div>
 			</div>
-			<div id="Project4-Description" class="ProjectsDiv-ProjectsWraper-Project-Description">
-					
-			</div>
-			
 			<div id="Project5" class="ProjectsDiv-ProjectsWraper-Project">
 				<div>
 					<img src="img/smartphone.svg" alt=""></img>
 				</div>
+				<div class="ProjectsDiv-ProjectsWraper-Project-Name">
+					<h3>Andriod App<br>for 'SPS'</h3>
+				</div>
 				<div id="Project5-Pointer" class="Project-Pointer"></div>
 			</div>
-			<div id="Project5-Description" class="ProjectsDiv-ProjectsWraper-Project-Description">
-					
-			</div>
-			
 			<div id="Project6" class="ProjectsDiv-ProjectsWraper-Project">
 				<div>
 					<img src="img/nail.svg" alt=""></img>
 				</div>
+				<div class="ProjectsDiv-ProjectsWraper-Project-Name">
+					<h3>3D Designs</h3>
+				</div>
 				<div id="Project6-Pointer" class="Project-Pointer"></div>
+			</div>
+			<div id="Project4-Description" class="ProjectsDiv-ProjectsWraper-Project-Description">
+					
+			</div>
+			<div id="Project5-Description" class="ProjectsDiv-ProjectsWraper-Project-Description">
+					
 			</div>
 			<div id="Project6-Description" class="ProjectsDiv-ProjectsWraper-Project-Description">
 					
@@ -136,9 +154,9 @@
 	</div>
 	<div class="Spacer-Div-H50p"></div>
 	
-	<div id="Bio" class="Spacer-Div-H100p"></div>
-	<div class="BioDiv">
-		<div style="height:100px;"></div>
+	<div class="Spacer-Div-H100p"></div>
+	<div id="Bio" class="BioDiv">
+		<div style="height:120px;"></div>
 		<h1>Biography</h1>
 		<div class="Spacer-Icon">
 			<img class="Spacer-Icon-LeftWing" src="img/three-lines.svg" alt="">
@@ -327,9 +345,9 @@
 	</div>
 	<div class="Spacer-Div-H50p-00AAA0"></div>
 	
-	<div id="Contact" class="Spacer-Div-H100p-00AAA0"></div>
-	<div class="ContactsDiv">
-		<div class="Spacer-Div-H100p"></div>
+	<div class="Spacer-Div-H100p-00AAA0"></div>
+	<div id="Contact" class="ContactsDiv">
+		<div class="Spacer-Div-H120p"></div>
 		<h1>Contact Me</h1>
 		<div class="Spacer-Icon">
 			<img class="Spacer-Icon-LeftWing" src="img/three-lines-333333.svg" alt="">
@@ -342,7 +360,7 @@
 			<input type="text" placeholder="Name" id="name" name="name">
 			<input type="text" placeholder="E-mail" id="email" name="email">
 			<input type="text" placeholder="Website (optional)" id="website" name="website">
-			<textarea type="text" placeholder="Message" rows="6" id="message" name="message" style="resize:none; border-bottom:1px solid #F1F1F1; font-family:Arial;"></textarea>
+			<textarea type="text" placeholder="Message" rows="10" id="message" name="message" style="resize:none; border-bottom:1px solid #F1F1F1; font-family:Arial;"></textarea>
 			<input type="submit" value="Send Message">
 		</form>
 		<p id="echoBack"></p>

@@ -34,6 +34,11 @@ li a {
 	height:25px;
 }
 
+.Spacer-Div-H25p-00AAA0 {
+	height:25px; 
+	background-color:#00AAA0; 
+}
+
 .Spacer-Div-H50p {
 	height:50px;
 }
@@ -50,9 +55,18 @@ li a {
 .Spacer-Div-H100p {
 	height:100px; 
 }
+
 .Spacer-Div-H100p-00AAA0 {
 	height:100px; 
 	background-color:#00AAA0; 
+}
+
+.Spacer-Div-H120p {
+	height:120px; 
+}
+
+.Spacer-Div-H150p {
+	height:150px; 
 }
 
 .Spacer-Div-H170p {
@@ -85,13 +99,33 @@ li a {
 /****NavBar****/
 /**************/
 .NavBar {
-	 position:fixed; 
-	 overflow:hidden; 
-	 z-index:9; 
-	 margin-top:0px; 
-	 height:170px; 
-	 width:100%; 
-	 background-color:#333333;
+	position:fixed; 
+	overflow:hidden; 
+	z-index:9; 
+	margin-top:0px; 
+	height:170px; 
+	width:100%; 
+	background-color:#333333;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.NavBar-Smaller {
+	position:fixed; 
+	overflow:hidden; 
+	z-index:9; 
+	margin-top:0px; 
+	height:100px; 
+	width:100%; 
+	background-color:#333333;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .NavBar-ContentWraper {
@@ -222,6 +256,7 @@ li a {
 
 .ProjectsDiv-ProjectsWraper {
 	width:80%; 
+	max-width: 750px;
 	margin:auto;
 }
 
@@ -268,7 +303,7 @@ li a {
 }
 
 .ProjectsDiv-ProjectsWraper-Project-Description {
-	width: 60%;
+	width: 100%;
 	height: 400px;
 	background-color: #F1F1F1;
 	margin: auto;
