@@ -206,7 +206,7 @@ function animateProjectDescription(this_project) {
 			$(active_div).hide();
 		}
 		$("#"+this_project.toString()+"-Description").fadeIn("slow");
-		$(this_div).slideDown("slow");
+		$(this_div).slideDown(1000);
 		$("#"+this_project.toString()).addClass('borderClass');
 	}
 	

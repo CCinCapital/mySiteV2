@@ -322,22 +322,12 @@ li a {
 	color: #333333;
 }
 
-.Project-Pointer {
-	padding: 0px;
-	margin: auto;
-	width: 0; 
-	height: 0; 
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 25px solid #F1F1F1;
-	display: none;
-}
-
 .ProjectsDiv-Project-Description-Wraper {
 	display: block;
 }
 
 .ProjectsDiv-Project-Description {
+	min-height: 770px;
 	background-color: #686868  ;
 	display: none;
 	left: 0px;
@@ -480,7 +470,7 @@ li a {
 	position: absolute;
 	width: auto;
 	top: 50%;
-	margin-top: -22px;
+	margin-top: -42px;
 	transition: 0.6s ease;
 	border: none;
 	border-radius: 0 10px 10px 0;
@@ -492,7 +482,7 @@ li a {
 	width: auto;
 	top: 50%;
 	right: 0;
-	margin-top: -22px;
+	margin-top: -42px;
 	transition: 0.6s ease;
 	border: none;
 	border-radius: 10px 0px 0px 10px;
