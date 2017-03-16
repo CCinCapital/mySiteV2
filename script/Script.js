@@ -228,6 +228,9 @@ function animateProjectDescription(this_project) {
 		$("#"+this_project.toString()+"-Description").fadeIn("slow");
 		$(this_div).slideDown(1000);
 		$("#"+this_project.toString()).addClass('borderClass');
+		$('html, body').animate({
+		scrollTop: $("#"+this_project.toString()).offset().top - 150
+		}, 1000);
 	}
 	
 	$('html, body').animate({
