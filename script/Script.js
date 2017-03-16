@@ -9,7 +9,27 @@ window.onload = function () {
             document.getElementById("header").className = "NavBar";
 		}
     });
+	
+	$("#toHome").click(function(){
+		goTo("#Home");
+	});
 
+	$("#toProjects").click(function(){
+		goTo("#Projects");
+	});
+
+	$("#toBio").click(function(){
+		goTo("#Bio");
+	});
+
+	$("#toContact").click(function(){
+		goTo("#Contact");
+	});
+	
+	$("#goToProjects").click(function(){
+		goTo("#Projects");
+	});
+	
 	//Hide/Display project description on click project img/name
 	$("#Project1").click(function(){
 		animateProjectDescription(this.id);
@@ -143,6 +163,12 @@ window.onload = function () {
 	
 	//Contact Form 
 	document.getElementById('myForm').addEventListener('submit', formSubmit, false);
+}
+
+function goTo(this_element){
+	$('html, body').animate({
+		scrollTop: $(this_element).offset().top
+	}, 1000);
 }
 
 //Project
