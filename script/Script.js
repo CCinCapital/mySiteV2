@@ -33,6 +33,7 @@ window.onload = function () {
 	//Hide/Display project description on click project img/name
 	$("#Project1").click(function(){
 		animateProjectDescription(this.id);
+		showSlides(1);
 	});
 
 	$("#Project2").click(function(){
@@ -54,6 +55,8 @@ window.onload = function () {
 	$("#Project6").click(function(){
 		animateProjectDescription(this.id);
 	});
+	
+	
 	
 	
 	//BIO Default display/hight About secion
@@ -208,10 +211,38 @@ function animateProjectDescription(this_project) {
 	}
 	
 	$('html, body').animate({
-		scrollTop: $("#"+this_project.toString()).offset().top - 120
+		scrollTop: $("#"+this_project.toString()).offset().top + 222
 	}, 1000);
 	active_project = this_project;
 	active_div = this_div;
+}
+
+/* slide show */
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
 
 //BIO
