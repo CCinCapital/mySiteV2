@@ -43,27 +43,27 @@ window.onload = function () {
 
 	$("#Project2").click(function(){
 		animateProjectDescription(this.id);
-		showSlides(1, $(this).attr('id'));
+		showSlides(0, $(this).attr('id'));
 	});
 	
 	$("#Project3").click(function(){
 		animateProjectDescription(this.id);
-		showSlides(1, $(this).attr('id'));
+		showSlides(0, $(this).attr('id'));
 	});
 	
 	$("#Project4").click(function(){
 		animateProjectDescription(this.id);
-		showSlides(1, $(this).attr('id'));
+		showSlides(0, $(this).attr('id'));
 	});
 	
 	$("#Project5").click(function(){
 		animateProjectDescription(this.id);
-		showSlides(1, $(this).attr('id'));
+		showSlides(0, $(this).attr('id'));
 	});
 	
 	$("#Project6").click(function(){
 		animateProjectDescription(this.id);
-		showSlides(1, $(this).attr('id'));
+		showSlides(0, $(this).attr('id'));
 	});
 	
 	$("#Project1-prev").click(function(){
@@ -256,7 +256,7 @@ function showSlides(n, this_class) {
   var i;
   var slides = document.getElementsByClassName(this_class+"-slides");
   var dots = document.getElementsByClassName(this_class+"-dot");
-  if (n >= slides.length) {slideIndex = 1}
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
