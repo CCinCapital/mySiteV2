@@ -1,4 +1,9 @@
 window.onload = function () {
+/*
+	console.log(window.innerHeight);
+	console.log(window.innerWidth);
+*/
+	
 	//Shrink Header on scroll down
 	window.addEventListener('scroll', function(){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop;
@@ -251,7 +256,7 @@ function showSlides(n, this_class) {
   var i;
   var slides = document.getElementsByClassName(this_class+"-slides");
   var dots = document.getElementsByClassName(this_class+"-dot");
-  if (n > slides.length) {slideIndex = 1}
+  if (n >= slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
