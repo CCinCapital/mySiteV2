@@ -33,31 +33,51 @@ window.onload = function () {
 	//Hide/Display project description on click project img/name
 	$("#Project1").click(function(){
 		animateProjectDescription(this.id);
-		showSlides(1);
+		showSlides(1, $(this).attr('id'));
 	});
 
 	$("#Project2").click(function(){
 		animateProjectDescription(this.id);
+		showSlides(1, $(this).attr('id'));
 	});
 	
 	$("#Project3").click(function(){
 		animateProjectDescription(this.id);
+		showSlides(1, $(this).attr('id'));
 	});
 	
 	$("#Project4").click(function(){
 		animateProjectDescription(this.id);
+		showSlides(1, $(this).attr('id'));
 	});
 	
 	$("#Project5").click(function(){
 		animateProjectDescription(this.id);
+		showSlides(1, $(this).attr('id'));
 	});
 	
 	$("#Project6").click(function(){
 		animateProjectDescription(this.id);
+		showSlides(1, $(this).attr('id'));
 	});
 	
+	$("#Project1-prev").click(function(){
+		plusSlides(-1, $(this).attr('class'));
+		
+	});
 	
+	$("#Project1-next").click(function(){
+		plusSlides(1, $(this).attr('class'));
+	});
 	
+	$("#Project2-prev").click(function(){
+		plusSlides(-1, $(this).attr('class'));
+		
+	});
+	
+	$("#Project2-next").click(function(){
+		plusSlides(1, $(this).attr('class'));
+	});
 	
 	//BIO Default display/hight About secion
 	var active_tab = document.getElementById('Bio-About');
@@ -219,20 +239,15 @@ function animateProjectDescription(this_project) {
 
 /* slide show */
 var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, this_class, this_class_dot) {
+  showSlides(slideIndex += n, this_class);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides(n, this_class) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var slides = document.getElementsByClassName(this_class+"-slides");
+  var dots = document.getElementsByClassName(this_class+"-dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {

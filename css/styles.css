@@ -453,7 +453,6 @@ li a {
 	border-top: 20px solid #010000;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
-	box-shadow: 0 , 0 6px 20px 0 rgba(0, 0, 0, 0.9);
 }
 
 .mySlides img {
@@ -492,11 +491,9 @@ li a {
 	padding: 16px;
 	width: 30px;
 	opacity: 0.3;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 .prev img:hover {
 	opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
 	transition: 0.4s ease;
 }
 
@@ -504,12 +501,10 @@ li a {
 	padding: 16px;
 	width: 30px;
 	opacity: 0.3;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
 	transform: scaleX(-1); 
 }
 .next img:hover {
 	opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
 	transition: 0.4s ease;
 }
 
