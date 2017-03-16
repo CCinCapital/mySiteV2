@@ -238,9 +238,16 @@ function animateProjectDescription(this_project) {
 		}, 1000);
 	}
 	
-	$('html, body').animate({
-		scrollTop: $("#"+this_project.toString()).offset().top + 222
-	}, 1000);
+	if (window.innerHeight < 950) {
+		$('html, body').animate({
+			scrollTop: $("#"+this_project.toString()).offset().top + 222
+		}, 1000);
+	}
+	else{
+		$('html, body').animate({
+			scrollTop: $("#"+this_project.toString()).offset().top - 110
+		}, 1000);
+	}
 	active_project = this_project;
 	active_div = this_div;
 }
