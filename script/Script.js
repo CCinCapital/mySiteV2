@@ -1,8 +1,8 @@
 window.onload = function () {
-/*
+
 	console.log(window.innerHeight);
 	console.log(window.innerWidth);
-*/
+
 	
 	//Shrink Header on scroll down
 	window.addEventListener('scroll', function(){
@@ -238,9 +238,9 @@ function animateProjectDescription(this_project) {
 		}, 1000);
 	}
 	
-	if (window.innerHeight < 950) {
+	if (window.innerHeight < 1000) {
 		$('html, body').animate({
-			scrollTop: $("#"+this_project.toString()).offset().top + 222
+			scrollTop: $("#"+this_project.toString()).offset().top + 220
 		}, 1000);
 	}
 	else{
