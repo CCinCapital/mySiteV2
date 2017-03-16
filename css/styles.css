@@ -565,6 +565,9 @@ input[type=submit]:hover {
 	background-color: #009990;
 }
 
+#echoBack {
+	display: none;
+}
 
 /**************/
 /****Footer****/

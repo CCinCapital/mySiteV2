@@ -1,9 +1,9 @@
 <?php
-	require_once '/lib/Twilio/autoload.php';
+	require_once '../lib/Twilio/autoload.php';
 	use Twilio\Rest\Client;
 	
 	$sid = "AC1871712e322c9f8a44b2add986751743";
-	token = "4d9503721126ade5ee188ec66eb2cb04";
+	$token = "4d9503721126ade5ee188ec66eb2cb04";
 	$client = new Client($sid, $token);
 
 	$name=$_POST['name'];
