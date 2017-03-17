@@ -1,8 +1,8 @@
 window.onload = function () {
-
+/*
 	console.log(window.innerHeight);
 	console.log(window.innerWidth);
-
+*/
 	
 	//Shrink Header on scroll down
 	window.addEventListener('scroll', function(){
