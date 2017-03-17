@@ -553,7 +553,6 @@ li a {
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
   height: 13px;
   width: 13px;
   position: relative;

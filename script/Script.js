@@ -255,7 +255,7 @@ function animateProjectDescription(this_project) {
 /* slide show */
 var slideIndex = 1;
 
-function plusSlides(n, this_class, this_class_dot) {
+function plusSlides(n, this_class) {
   showSlides(slideIndex += n, this_class);
 }
 
