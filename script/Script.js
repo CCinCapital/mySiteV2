@@ -38,22 +38,26 @@ window.onload = function () {
 	//Hide/Display project description on click project img/name
 	$("#Project1").click(function(){
 		animateProjectDescription(this.id);
+		slideIndex = 1;
 		showSlides(1, $(this).attr('id'));
 	});
 
 	$("#Project2").click(function(){
 		animateProjectDescription(this.id);
-		showSlides(0, $(this).attr('id'));
+		slideIndex = 1;
+		showSlides(1, $(this).attr('id'));
 	});
 	
 	$("#Project3").click(function(){
 		animateProjectDescription(this.id);
-		showSlides(0, $(this).attr('id'));
+		slideIndex = 1;
+		showSlides(1, $(this).attr('id'));
 	});
 	
 	$("#Project4").click(function(){
 		animateProjectDescription(this.id);
-		showSlides(0, $(this).attr('id'));
+		slideIndex = 1;
+		showSlides(1, $(this).attr('id'));
 	});
 	
 	$("#Project5").click(function(){
@@ -81,6 +85,24 @@ window.onload = function () {
 	});
 	
 	$("#Project2-next").click(function(){
+		plusSlides(1, $(this).attr('class'));
+	});
+	
+	$("#Project3-prev").click(function(){
+		plusSlides(-1, $(this).attr('class'));
+		
+	});
+	
+	$("#Project3-next").click(function(){
+		plusSlides(1, $(this).attr('class'));
+	});
+
+	$("#Project4-prev").click(function(){
+		plusSlides(-1, $(this).attr('class'));
+		
+	});
+	
+	$("#Project4-next").click(function(){
 		plusSlides(1, $(this).attr('class'));
 	});
 	
