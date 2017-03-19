@@ -382,15 +382,7 @@ li a {
 	margin-bottom: -2px;
 }
 
-#Project-Description-group-1 {
-	background-color: #686868  ;
-	display: none;
-	left: 0px;
-	right: 0px;
-	padding: 15px;
-}
-
-#Project-Description-group-2 {
+.Project-Description-group {
 	background-color: #686868  ;
 	display: none;
 	left: 0px;

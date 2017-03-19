@@ -62,17 +62,30 @@ window.onload = function () {
 	
 	$("#Project5").click(function(){
 		animateProjectDescription(this.id);
+		slideIndex = 1;
 		showSlides(0, $(this).attr('id'));
 	});
 	
 	$("#Project6").click(function(){
 		animateProjectDescription(this.id);
-		showSlides(0, $(this).attr('id'));
+		slideIndex = 1;
+		showSlides(1, $(this).attr('id'));
+	});
+	
+	$("#Project7").click(function(){
+		animateProjectDescription(this.id);
+		slideIndex = 1;
+		showSlides(1, $(this).attr('id'));
+	});
+	
+	$("#Project8").click(function(){
+		animateProjectDescription(this.id);
+		slideIndex = 1;
+		showSlides(1, $(this).attr('id'));
 	});
 	
 	$("#Project1-prev").click(function(){
 		plusSlides(-1, $(this).attr('class'));
-		
 	});
 	
 	$("#Project1-next").click(function(){
@@ -81,7 +94,6 @@ window.onload = function () {
 	
 	$("#Project2-prev").click(function(){
 		plusSlides(-1, $(this).attr('class'));
-		
 	});
 	
 	$("#Project2-next").click(function(){
@@ -90,7 +102,6 @@ window.onload = function () {
 	
 	$("#Project3-prev").click(function(){
 		plusSlides(-1, $(this).attr('class'));
-		
 	});
 	
 	$("#Project3-next").click(function(){
@@ -99,13 +110,43 @@ window.onload = function () {
 
 	$("#Project4-prev").click(function(){
 		plusSlides(-1, $(this).attr('class'));
-		
 	});
 	
 	$("#Project4-next").click(function(){
 		plusSlides(1, $(this).attr('class'));
 	});
 	
+	$("#Project5-prev").click(function(){
+		plusSlides(-1, $(this).attr('class'));
+	});
+	
+	$("#Project5-next").click(function(){
+		plusSlides(1, $(this).attr('class'));
+	});
+/*	
+	$("#Project6-prev").click(function(){
+		plusSlides(-1, $(this).attr('class'));
+	});
+	
+	$("#Project6-next").click(function(){
+		plusSlides(1, $(this).attr('class'));
+	});
+*/
+	$("#Project7-prev").click(function(){
+		plusSlides(-1, $(this).attr('class'));
+	});
+	
+	$("#Project7-next").click(function(){
+		plusSlides(1, $(this).attr('class'));
+	});	
+	
+	$("#Project8-prev").click(function(){
+		plusSlides(-1, $(this).attr('class'));
+	});
+	
+	$("#Project8-next").click(function(){
+		plusSlides(1, $(this).attr('class'));
+	});	
 	//BIO Default display/hight About secion
 	var active_tab = document.getElementById('Bio-About');
 	activateTab(active_tab);
